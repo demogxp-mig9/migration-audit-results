@@ -86,13 +86,13 @@ gh workflow run migration-execute-wave.yml -f source_org=demogxp -f target_org=d
 
 ## 3. Webhooks Requiring Signing Secret & Activation
 
-Webhook HMAC signing secrets are write-only on source organizations. Any webhook that had a signing secret on `demogxp` is created in an **inactive** state (`active: false`) on `demogxp-mig9` so unverified payloads are never sent before you supply the secret. **Important:** Entering a secret in the GitHub WebUI does **not** automatically re-enable an inactive webhook—you must both enter the **Secret** and check the **[x] Active** checkbox before clicking **Update webhook** (or run the `gh api --method PATCH ... -F active=true` CLI command).
+Because **Sandbox Rehearsal Mode** is enabled, **all** organization and repository webhooks on `demogxp-mig9` were created in an **inactive** state (`active: false`)—including webhooks that had no signing secret on `demogxp`—so rehearsal runs never trigger external webhook endpoints. Webhook HMAC signing secrets are also write-only on source organizations. **Important:** Entering a secret in the GitHub WebUI does **not** automatically re-enable an inactive webhook—for production cutover, you must both enter the **Secret** (if required) and check the **[x] Active** checkbox before clicking **Update webhook** (or run the `gh api --method PATCH ... -F active=true` CLI command).
 
 > [!TIP]
 > **How Developers Should Populate Webhook HMAC Secrets:**
 > - **Option 1 — Re-use your existing secret:** Copy the webhook secret string from your receiving service’s configuration or secret vault (e.g., `GITHUB_WEBHOOK_SECRET` in AWS Secrets Manager, Vault, Jenkins, or `.env`), paste it into the GitHub webhook **Secret** field, and check **[x] Active**.
 > - **Option 2 — Rotate to a new secret:** Generate a new random secret string (e.g., `openssl rand -hex 32`), update your receiving server’s configuration, paste the same string into the GitHub webhook **Secret** field, and check **[x] Active**.
-> - **Already-Active Webhooks (Listed Last):** Webhooks with status `active-no-secret` had no signing secret configured on the source organization and are already active on the destination. They are listed at the bottom for optional endpoint verification.
+> - **Sandbox Rehearsal Safety:** All webhooks listed below have `active: false` on `demogxp-mig9` so external services are never notified during rehearsal.
 
 | Scope | Target | Webhook URL / Identifier | Status | Direct Settings Link | CLI Command (`gh`) |
 | :--- | :--- | :--- | :--- | :--- | :--- |

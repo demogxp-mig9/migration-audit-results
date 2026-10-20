@@ -29,4 +29,4 @@
 
 | Resource Name | Resource Type | Operation | Status | Completed At | Verification | Notes / Discrepancy Diff |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `runner` | `repository` | `create` | ✅ succeeded | `2026-10-19T23:16:11.535Z` | ✅ Verified | Created and verified on target. — [Repo Settings ↗](https://github.com/demogxp-mig9/runner/settings) |
+| `runner` | `repository` | `create` | ✅ succeeded | `2026-10-19T23:16:11.535Z` | ✅ Verified | Transferred repository "runner" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode. — [Repo Settings ↗](https://github.com/demogxp-mig9/runner/settings) |
