@@ -1,0 +1,24 @@
+{
+  "expectedCohortCount": 14,
+  "observedCohortCount": 14,
+  "missingCohortReports": 0,
+  "failedCohortCount": 1,
+  "failedModuleCount": 1,
+  "failures": [
+    {
+      "cohortFile": "downloaded-cohorts/scans/cohort-report-cohort-standard-01.json",
+      "moduleId": "gei-repo",
+      "targetIdentifier": "demogxp-mig9/runner",
+      "status": "failed",
+      "failedOperations": [
+        {
+          "operationId": "gei-repo-error-runner",
+          "status": "failed",
+          "error": "GEI migrate-repo failed with exit code 1: [2026-10-19 23:15:09] [ERROR] Migration Failed. Migration ID: RM_kgTaACQzOTIxOWQwZC1mY2U1LTRmNjMtODhiMy05ZmUwYjExMDc0MWQ\n[2026-10-19 23:15:09] [ERROR] An unexpected error has caused the migration to fail. Please re-run the migration.",
+          "resourceName": "runner",
+          "targetIdentifier": "demogxp-mig9/runner"
+        }
+      ]
+    }
+  ]
+}

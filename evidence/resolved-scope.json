@@ -1,0 +1,533 @@
+{
+  "version": "1.0.0",
+  "name": "demogxp-to-demogxp-mig9-all",
+  "targetType": "ghec",
+  "orgItemsMode": "all",
+  "mirrorPushMode": "fast-snapshot",
+  "sandboxRehearsal": true,
+  "organizations": [
+    {
+      "source": "demogxp",
+      "target": "demogxp-mig9",
+      "targetType": "ghec",
+      "orgItemsMode": "all",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    }
+  ],
+  "repositories": [
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "nest",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "nest",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "prometheus",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "prometheus",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "core",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "core",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "react",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "react",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "WebKit",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "WebKit",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": true,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ],
+      "gitTransferStrategy": "mirror-push"
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "next.js",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "next.js",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": true,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ],
+      "gitTransferStrategy": "mirror-push"
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "release-heavy-benchmark",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "release-heavy-benchmark",
+      "useGei": true,
+      "skipReleases": true,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "runner",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "runner",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "dummy-repo-public",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "dummy-repo-public",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "flask",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "flask",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "svelte",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "svelte",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "chromium",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "chromium",
+      "useGei": true,
+      "skipReleases": true,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ],
+      "gitTransferStrategy": "mirror-push"
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "llvm-project",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "llvm-project",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": true,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ],
+      "gitTransferStrategy": "mirror-push"
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "nixpkgs",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "nixpkgs",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": true,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ],
+      "gitTransferStrategy": "mirror-push"
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "linux",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "linux",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": true,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ],
+      "gitTransferStrategy": "mirror-push"
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "TypeScript",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "TypeScript",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": true,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ],
+      "gitTransferStrategy": "mirror-push"
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "rust",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "rust",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "ansible",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "ansible",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "dummy-repo-private-lfs",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "dummy-repo-private-lfs",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "express",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "express",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "node",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "node",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "terraform",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "terraform",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "ghe-actions-migration-framework",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "ghe-actions-migration-framework",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "kubernetes",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "kubernetes",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "ghec-content-filler",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "ghec-content-filler",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "migration-demo-1361857985-companion",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "migration-demo-1361857985-companion",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "migration-demo-1361857985-fork",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "migration-demo-1361857985-fork",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "grafana",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "grafana",
+      "useGei": true,
+      "archived": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "demo",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "demo",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "juice-shop",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "juice-shop",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "cpython",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "cpython",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "go",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "go",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "django",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "django",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "fastify",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "fastify",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    },
+    {
+      "sourceOrg": "demogxp",
+      "sourceRepo": "vite",
+      "targetOrg": "demogxp-mig9",
+      "targetRepo": "vite",
+      "useGei": true,
+      "skipReleases": false,
+      "lfsStrategy": "dual-remote-stream",
+      "mirrorPushMode": "fast-snapshot",
+      "sandboxRehearsal": true,
+      "modules": [
+        "auto"
+      ]
+    }
+  ],
+  "identityMapping": {
+    "strategy": "pass-through"
+  }
+}

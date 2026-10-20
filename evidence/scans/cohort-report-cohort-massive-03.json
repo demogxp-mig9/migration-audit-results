@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450269338-5522e2bd",
+  "executedAt": "2026-10-19T22:54:29.525Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-mirror-push-chromium",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:54:07.614Z",
+          "resourceType": "repository",
+          "resourceName": "chromium",
+          "operationType": "create",
+          "reason": "Transferred repository \"chromium\" via direct Git mirror-push (166262ms); metadata queued for sidecar rehydration. GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        }
+      ],
+      "durationMs": 167789,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": [
+        "issues",
+        "pull-requests",
+        "releases"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:chromium",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:09.415Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/chromium",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", has_issues: true -> false, has_wiki: true -> false, description: \"\" -> \"The official GitHub mirror of the Chromium source\", homepage: \"\" -> \"https://chromium.googlesource.com/chromium/src/\"",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        }
+      ],
+      "durationMs": 696,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 1,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:chromium",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:54:13.369Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "chromium",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:chromium",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:15.866Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "chromium",
+          "operationType": "update",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        }
+      ],
+      "durationMs": 1923,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "releases",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "issues",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "label:chromium:accessibility",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.019Z",
+          "resourceType": "issue-label",
+          "resourceName": "accessibility",
+          "operationType": "noop",
+          "reason": "Label \"accessibility\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:bug",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.019Z",
+          "resourceType": "issue-label",
+          "resourceName": "bug",
+          "operationType": "noop",
+          "reason": "Label \"bug\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:dependencies",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:54:21.273Z",
+          "resourceType": "issue-label",
+          "resourceName": "dependencies",
+          "operationType": "create",
+          "reason": "Create label \"dependencies\".",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:documentation",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.273Z",
+          "resourceType": "issue-label",
+          "resourceName": "documentation",
+          "operationType": "noop",
+          "reason": "Label \"documentation\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:duplicate",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.273Z",
+          "resourceType": "issue-label",
+          "resourceName": "duplicate",
+          "operationType": "noop",
+          "reason": "Label \"duplicate\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:enhancement",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.273Z",
+          "resourceType": "issue-label",
+          "resourceName": "enhancement",
+          "operationType": "noop",
+          "reason": "Label \"enhancement\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:good first issue",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.273Z",
+          "resourceType": "issue-label",
+          "resourceName": "good first issue",
+          "operationType": "noop",
+          "reason": "Label \"good first issue\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:help wanted",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.273Z",
+          "resourceType": "issue-label",
+          "resourceName": "help wanted",
+          "operationType": "noop",
+          "reason": "Label \"help wanted\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:invalid",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.273Z",
+          "resourceType": "issue-label",
+          "resourceName": "invalid",
+          "operationType": "noop",
+          "reason": "Label \"invalid\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:javascript",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:54:21.599Z",
+          "resourceType": "issue-label",
+          "resourceName": "javascript",
+          "operationType": "create",
+          "reason": "Create label \"javascript\".",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:question",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.599Z",
+          "resourceType": "issue-label",
+          "resourceName": "question",
+          "operationType": "noop",
+          "reason": "Label \"question\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        },
+        {
+          "operationId": "label:chromium:wontfix",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:54:21.599Z",
+          "resourceType": "issue-label",
+          "resourceName": "wontfix",
+          "operationType": "noop",
+          "reason": "Label \"wontfix\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        }
+      ],
+      "durationMs": 822,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "pull-requests",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "pull-request:chromium:1",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:54:28.004Z",
+          "resourceType": "pull-request",
+          "resourceName": "#1 Bump baseline-browser-mapping from 2.8.6 to 2.11.27 in /ui/webui/resources/tools/codemods",
+          "operationType": "create",
+          "reason": "Recreate open pull request #1 \"Bump baseline-browser-mapping from 2.8.6 to 2.11.27 in /ui/webui/resources/tools/codemods\".",
+          "targetIdentifier": "demogxp-mig9/chromium"
+        }
+      ],
+      "durationMs": 5597,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/chromium",
+      "scopeLevel": "repository"
+    }
+  ],
+  "recommendations": [
+    "GEI omitted issues metadata for demogxp-mig9/chromium. Recommended fallback module: 'issues'.",
+    "GEI omitted pull-requests metadata for demogxp-mig9/chromium. Recommended fallback module: 'pull-requests'.",
+    "GEI omitted releases metadata for demogxp-mig9/chromium. Recommended fallback module: 'releases'."
+  ]
+}

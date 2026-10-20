@@ -1,0 +1,761 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450164093-85b85b90",
+  "executedAt": "2026-10-19T22:50:22.604Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "org-custom-properties:demogxp-mig9:cost_center",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:49:45.685Z",
+          "resourceType": "custom-property-schema",
+          "resourceName": "cost_center",
+          "operationType": "create",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-custom-properties:demogxp-mig9:environment",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:49:46.032Z",
+          "resourceType": "custom-property-schema",
+          "resourceName": "environment",
+          "operationType": "create",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-custom-properties:demogxp-mig9:migration-demo-1361857985-stage",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:49:46.370Z",
+          "resourceType": "custom-property-schema",
+          "resourceName": "migration-demo-1361857985-stage",
+          "operationType": "create",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-custom-properties:demogxp-mig9:open_source",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.370Z",
+          "resourceType": "custom-property-schema",
+          "resourceName": "open_source",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "custom-roles",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_admin",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.372Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_admin",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_admin' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_maintain",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.372Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_maintain",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_maintain' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_read",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.372Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_read",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_read' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_triage",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.372Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_triage",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_triage' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_write",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.372Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_write",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_write' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-app_manager",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.372Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "app_manager",
+          "operationType": "noop",
+          "reason": "Custom organization role 'app_manager' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-ci_cd_admin",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.372Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "ci_cd_admin",
+          "operationType": "noop",
+          "reason": "Custom organization role 'ci_cd_admin' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-open_source_license_manager",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.372Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "open_source_license_manager",
+          "operationType": "noop",
+          "reason": "Custom organization role 'open_source_license_manager' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-security_manager",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:49:46.372Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "security_manager",
+          "operationType": "noop",
+          "reason": "Custom organization role 'security_manager' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "teams",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-team-create-engineering",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:47.257Z",
+          "resourceType": "team",
+          "resourceName": "engineering",
+          "operationType": "create",
+          "reason": "Recreating team 'engineering' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-migration-demo-1361857985-team",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:48.701Z",
+          "resourceType": "team",
+          "resourceName": "migration-demo-1361857985-team",
+          "operationType": "create",
+          "reason": "Recreating team 'migration-demo-1361857985-team' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-migration-demo-1361857985-team-ghec-content-filler",
+          "status": "skipped",
+          "httpStatus": 404,
+          "completedAt": "2026-10-19T22:49:48.883Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "migration-demo-1361857985-team:ghec-content-filler",
+          "operationType": "update",
+          "reason": "Binding 'push' permission for team 'migration-demo-1361857985-team' on 'ghec-content-filler'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-platform-infra",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:50.010Z",
+          "resourceType": "team",
+          "resourceName": "platform-infra",
+          "operationType": "create",
+          "reason": "Recreating team 'platform-infra' (parent: engineering)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-fire",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:50.897Z",
+          "resourceType": "team",
+          "resourceName": "team-fire",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-Fire' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-fire-react",
+          "status": "skipped",
+          "httpStatus": 404,
+          "completedAt": "2026-10-19T22:49:51.060Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-fire:react",
+          "operationType": "update",
+          "reason": "Binding 'push' permission for team 'team-fire' on 'react'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-rocket",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:51.935Z",
+          "resourceType": "team",
+          "resourceName": "team-rocket",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-Rocket' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-mystic",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:53.327Z",
+          "resourceType": "team",
+          "resourceName": "team-mystic",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-Mystic' (parent: team-rocket)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-repo",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:54.522Z",
+          "resourceType": "team",
+          "resourceName": "team-repo",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-Repo' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-repo-ansible",
+          "status": "skipped",
+          "httpStatus": 404,
+          "completedAt": "2026-10-19T22:49:54.670Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-repo:ansible",
+          "operationType": "update",
+          "reason": "Binding 'push' permission for team 'team-repo' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-nest",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:56.025Z",
+          "resourceType": "team",
+          "resourceName": "team-nest",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-Nest' (parent: team-repo)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-nest-ansible",
+          "status": "skipped",
+          "httpStatus": 404,
+          "completedAt": "2026-10-19T22:49:56.132Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-nest:ansible",
+          "operationType": "update",
+          "reason": "Binding 'push' permission for team 'team-nest' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-private",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:57.524Z",
+          "resourceType": "team",
+          "resourceName": "team-private",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-private' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-private-dummy-repo-private-lfs",
+          "status": "skipped",
+          "httpStatus": 404,
+          "completedAt": "2026-10-19T22:49:57.669Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-private:dummy-repo-private-lfs",
+          "operationType": "update",
+          "reason": "Binding 'pull' permission for team 'team-private' on 'dummy-repo-private-lfs'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-public",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:49:58.905Z",
+          "resourceType": "team",
+          "resourceName": "team-public",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-public' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-public-ansible",
+          "status": "skipped",
+          "httpStatus": 404,
+          "completedAt": "2026-10-19T22:49:59.058Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-public:ansible",
+          "operationType": "update",
+          "reason": "Binding 'admin' permission for team 'team-public' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-public-nestt",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:00.705Z",
+          "resourceType": "team",
+          "resourceName": "team-public-nestt",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-public-nestt' (parent: team-public)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-public-nestt-ansible",
+          "status": "skipped",
+          "httpStatus": 404,
+          "completedAt": "2026-10-19T22:50:00.817Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-public-nestt:ansible",
+          "operationType": "update",
+          "reason": "Binding 'admin' permission for team 'team-public-nestt' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-public-secret",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:02.082Z",
+          "resourceType": "team",
+          "resourceName": "team-public-secret",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-Public-Secret' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-public-secret-ansible",
+          "status": "skipped",
+          "httpStatus": 404,
+          "completedAt": "2026-10-19T22:50:02.207Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-public-secret:ansible",
+          "operationType": "update",
+          "reason": "Binding 'pull' permission for team 'team-public-secret' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-role",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:03.299Z",
+          "resourceType": "team",
+          "resourceName": "team-role",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-Role' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-org-custom-team-role-all_repo_read",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T22:50:03.679Z",
+          "resourceType": "team-org-role",
+          "resourceName": "team-role:all_repo_read",
+          "operationType": "create",
+          "reason": "Assigning custom organization role 'all_repo_read' to team 'team-role'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-create-team-tactics",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:05.256Z",
+          "resourceType": "team",
+          "resourceName": "team-tactics",
+          "operationType": "create",
+          "reason": "Recreating team 'Team-Tactics' (parent: none)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-org-base-permission",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:50:06.059Z",
+          "resourceType": "org-permission",
+          "resourceName": "demogxp-mig9",
+          "operationType": "update",
+          "reason": "Aligning default repository permission to 'none'",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 19686,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-variables",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "org-variables:demogxp-mig9:ENABLE_MAINTENANCE_MODE",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:06.270Z",
+          "resourceType": "organization-variable",
+          "resourceName": "ENABLE_MAINTENANCE_MODE",
+          "operationType": "create",
+          "reason": "Variable is missing on target organization.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-variables:demogxp-mig9:GLOBAL_REGION",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:06.515Z",
+          "resourceType": "organization-variable",
+          "resourceName": "GLOBAL_REGION",
+          "operationType": "create",
+          "reason": "Variable is missing on target organization.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-variables:demogxp-mig9:MIGRATION_DEMO_1361857985_MODE",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:06.757Z",
+          "resourceType": "organization-variable",
+          "resourceName": "MIGRATION_DEMO_1361857985_MODE",
+          "operationType": "create",
+          "reason": "Variable is missing on target organization.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-variables:demogxp-mig9:SUPER_ORG_VARIABLE1",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:06.934Z",
+          "resourceType": "organization-variable",
+          "resourceName": "SUPER_ORG_VARIABLE1",
+          "operationType": "create",
+          "reason": "Variable is missing on target organization.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-variables:demogxp-mig9:agents:SUPER_AGENT_ORG_VARIABLE122",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:07.215Z",
+          "resourceType": "organization-variable",
+          "resourceName": "SUPER_AGENT_ORG_VARIABLE122",
+          "operationType": "create",
+          "reason": "Agent variable is missing on target organization.",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 1154,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-secrets",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "org-secrets:demogxp-mig9:actions:DEMO_ACTIONS_SECRET",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:07.619Z",
+          "resourceType": "organization-secret",
+          "resourceName": "DEMO_ACTIONS_SECRET",
+          "operationType": "create",
+          "reason": "actions organization secret (selected visibility) requires post-migration secret value population.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:actions:GHEC_TOKEN",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:08.040Z",
+          "resourceType": "organization-secret",
+          "resourceName": "GHEC_TOKEN",
+          "operationType": "create",
+          "reason": "actions organization secret (selected visibility) requires post-migration secret value population.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:actions:MIGRATION_DEMO_1361857985_ACTIONS_SECRET",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:08.591Z",
+          "resourceType": "organization-secret",
+          "resourceName": "MIGRATION_DEMO_1361857985_ACTIONS_SECRET",
+          "operationType": "create",
+          "reason": "actions organization secret (selected visibility) requires post-migration secret value population.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:actions:SUPER_ORG_SECRET12",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:08.963Z",
+          "resourceType": "organization-secret",
+          "resourceName": "SUPER_ORG_SECRET12",
+          "operationType": "create",
+          "reason": "actions organization secret (private visibility) requires post-migration secret value population.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:dependabot:DEMO_DEPENDABOT_SECRET",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:09.335Z",
+          "resourceType": "organization-secret",
+          "resourceName": "DEMO_DEPENDABOT_SECRET",
+          "operationType": "create",
+          "reason": "dependabot organization secret (selected visibility) requires post-migration secret value population.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:dependabot:SUPER_DEPENDA_ORG_SECRET1",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:09.745Z",
+          "resourceType": "organization-secret",
+          "resourceName": "SUPER_DEPENDA_ORG_SECRET1",
+          "operationType": "create",
+          "reason": "dependabot organization secret (private visibility) requires post-migration secret value population.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:codespaces:MIGRATION_DEMO_1361857985_CODESPACES_SECRET",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:10.365Z",
+          "resourceType": "organization-secret",
+          "resourceName": "MIGRATION_DEMO_1361857985_CODESPACES_SECRET",
+          "operationType": "create",
+          "reason": "codespaces organization secret (selected visibility) requires post-migration secret value population.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:codespaces:SUPER_CODE_ORG_122",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:10.947Z",
+          "resourceType": "organization-secret",
+          "resourceName": "SUPER_CODE_ORG_122",
+          "operationType": "create",
+          "reason": "codespaces organization secret (private visibility) requires post-migration secret value population.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:agents:SUPER_AGENT_ORG_SECRET2212",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:11.317Z",
+          "resourceType": "organization-secret",
+          "resourceName": "SUPER_AGENT_ORG_SECRET2212",
+          "operationType": "create",
+          "reason": "agents organization secret (private visibility) requires post-migration secret value population.",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 4101,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-org-settings-demogxp-mig9",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:50:12.051Z",
+          "resourceType": "org-setting",
+          "resourceName": "demogxp-mig9",
+          "operationType": "update",
+          "reason": "Reconciling 1 organization settings for 'demogxp-mig9'",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 733,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "actions-policies",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-actions-enabled-repos-demogxp-mig9",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:50:12.462Z",
+          "resourceType": "actions-policy",
+          "resourceName": "demogxp-mig9:enabled-repositories",
+          "operationType": "update",
+          "reason": "Disabling organization Actions (enabled_repositories: 'none') for sandbox rehearsal mode",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 410,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-webhooks",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "org-webhooks:demogxp-mig9:https://migration-demo.invalid/migration-demo-1361857985/org",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:12.770Z",
+          "resourceType": "webhook",
+          "resourceName": "https://migration-demo.invalid/migration-demo-1361857985/org",
+          "operationType": "create",
+          "reason": "Creating webhook for `https://migration-demo.invalid/migration-demo-1361857985/org` (inactive in sandbox rehearsal mode)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-webhooks:demogxp-mig9:https://httpbin.org/post",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:50:13.490Z",
+          "resourceType": "webhook",
+          "resourceName": "https://httpbin.org/post",
+          "operationType": "create",
+          "reason": "Creating webhook for `https://httpbin.org/post` (inactive in sandbox rehearsal mode)",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 1027,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "ip-allow-lists",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "apps-inventory",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-advisory-app-hackmd-hub",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:50:13.491Z",
+          "resourceType": "github_app_installation",
+          "resourceName": "hackmd-hub",
+          "operationType": "warn",
+          "reason": "GitHub Apps cannot be installed programmatically via API. An organization administrator must authorize and install \"hackmd-hub\" (ID: 37423) on demogxp-mig9.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-advisory-app-demogxp-test-custom",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:50:13.491Z",
+          "resourceType": "github_app_installation",
+          "resourceName": "demogxp-test-custom",
+          "operationType": "warn",
+          "reason": "GitHub Apps cannot be installed programmatically via API. \"demogxp-test-custom\" (ID: 5369870) is a private custom app and must be recreated on demogxp-mig9 as \"demogxp-test-custom-demogxp-mig9\" (Selected repositories: react, demo). Recreate URL: https://github.com/organizations/demogxp-mig9/settings/apps/new?name=demogxp-test-custom-demogxp-mig9&description=This+is+just+a+test+app+for+migration+testing&url=https%3A%2F%2Flocalhost.com&public=false&webhook_active=false&actions=write&administration=write&agent_secrets=write&agent_tasks=write&metadata=read",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-advisory-app-testing-all-repos-app",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:50:13.491Z",
+          "resourceType": "github_app_installation",
+          "resourceName": "testing-all-repos-app",
+          "operationType": "warn",
+          "reason": "GitHub Apps cannot be installed programmatically via API. \"testing-all-repos-app\" (ID: 5369888) is a private custom app and must be recreated on demogxp-mig9 as \"testing-all-repos-app-demogxp-mig9\". Recreate URL: https://github.com/organizations/demogxp-mig9/settings/apps/new?name=testing-all-repos-app-demogxp-mig9&description=Recreated+from+source+GitHub+App+%22testing-all-repos-app%22+for+demogxp-mig9&url=https%3A%2F%2Flocalhost.com&public=false&webhook_active=false&actions=write&administration=write&metadata=read",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "projects-v2",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-create-project-v2-migration-demo-1361857985-project",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:50:18.257Z",
+          "resourceType": "project_v2",
+          "resourceName": "migration-demo-1361857985-project",
+          "operationType": "create",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-create-project-v2-projectgxp",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:50:22.604Z",
+          "resourceType": "project_v2",
+          "resourceName": "PROJECTGXP",
+          "operationType": "create",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 9113,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    }
+  ]
+}

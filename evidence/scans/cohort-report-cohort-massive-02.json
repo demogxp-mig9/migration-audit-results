@@ -1,0 +1,698 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450256748-096be1a0",
+  "executedAt": "2026-10-19T22:53:45.818Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-mirror-push-next.js",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:31.108Z",
+          "resourceType": "repository",
+          "resourceName": "next.js",
+          "operationType": "create",
+          "reason": "Transferred repository \"next.js\" via direct Git mirror-push (16622ms); metadata queued for sidecar rehydration. GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        }
+      ],
+      "durationMs": 17707,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": [
+        "issues",
+        "pull-requests",
+        "releases"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:next.js",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:32.712Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/next.js",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", has_issues: true -> false, has_wiki: true -> false, description: \"\" -> \"The React Framework\", homepage: \"\" -> \"https://nextjs.org\", archived: false -> true",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        }
+      ],
+      "durationMs": 614,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:next.js",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:35.987Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "next.js",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:next.js:.github/CODEOWNERS",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:43.100Z",
+          "resourceType": "codeowners-file",
+          "resourceName": ".github/CODEOWNERS",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/CODEOWNERS already match target organization",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "codeowners:next.js:.github/workflows/build_and_deploy.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:43.100Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/build_and_deploy.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/build_and_deploy.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "codeowners:next.js:.github/workflows/build_reusable.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:43.100Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/build_reusable.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/build_reusable.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "codeowners:next.js:.github/workflows/release-next-rspack.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:43.100Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/release-next-rspack.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/release-next-rspack.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:next.js",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:44.018Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "next.js",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        }
+      ],
+      "durationMs": 2753,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "releases",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "issues",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "label:next.js:accessibility",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:49.745Z",
+          "resourceType": "issue-label",
+          "resourceName": "accessibility",
+          "operationType": "noop",
+          "reason": "Label \"accessibility\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:bug",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:49.745Z",
+          "resourceType": "issue-label",
+          "resourceName": "bug",
+          "operationType": "noop",
+          "reason": "Label \"bug\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:dependencies",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:51:49.977Z",
+          "resourceType": "issue-label",
+          "resourceName": "dependencies",
+          "operationType": "create",
+          "reason": "Create label \"dependencies\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:documentation",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:49.977Z",
+          "resourceType": "issue-label",
+          "resourceName": "documentation",
+          "operationType": "noop",
+          "reason": "Label \"documentation\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:duplicate",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:49.977Z",
+          "resourceType": "issue-label",
+          "resourceName": "duplicate",
+          "operationType": "noop",
+          "reason": "Label \"duplicate\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:enhancement",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:49.977Z",
+          "resourceType": "issue-label",
+          "resourceName": "enhancement",
+          "operationType": "noop",
+          "reason": "Label \"enhancement\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:good first issue",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:49.977Z",
+          "resourceType": "issue-label",
+          "resourceName": "good first issue",
+          "operationType": "noop",
+          "reason": "Label \"good first issue\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:help wanted",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:49.977Z",
+          "resourceType": "issue-label",
+          "resourceName": "help wanted",
+          "operationType": "noop",
+          "reason": "Label \"help wanted\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:invalid",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:49.977Z",
+          "resourceType": "issue-label",
+          "resourceName": "invalid",
+          "operationType": "noop",
+          "reason": "Label \"invalid\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:javascript",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:51:50.275Z",
+          "resourceType": "issue-label",
+          "resourceName": "javascript",
+          "operationType": "create",
+          "reason": "Create label \"javascript\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:question",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:50.275Z",
+          "resourceType": "issue-label",
+          "resourceName": "question",
+          "operationType": "noop",
+          "reason": "Label \"question\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:rust",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:51:50.539Z",
+          "resourceType": "issue-label",
+          "resourceName": "rust",
+          "operationType": "create",
+          "reason": "Create label \"rust\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "label:next.js:wontfix",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:50.539Z",
+          "resourceType": "issue-label",
+          "resourceName": "wontfix",
+          "operationType": "noop",
+          "reason": "Label \"wontfix\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        }
+      ],
+      "durationMs": 1042,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "pull-requests",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "pull-request:next.js:30",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:51:56.711Z",
+          "resourceType": "pull-request",
+          "resourceName": "#30 Bump compression from 1.7.4 to 1.8.2 in /packages/next",
+          "operationType": "create",
+          "reason": "Recreate open pull request #30 \"Bump compression from 1.7.4 to 1.8.2 in /packages/next\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:29",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:01.532Z",
+          "resourceType": "pull-request",
+          "resourceName": "#29 Bump next from 16.2.3 to 16.3.8 in /apps/bundle-analyzer",
+          "operationType": "create",
+          "reason": "Recreate open pull request #29 \"Bump next from 16.2.3 to 16.3.8 in /apps/bundle-analyzer\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:28",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:06.400Z",
+          "resourceType": "pull-request",
+          "resourceName": "#28 Bump next from 15.4.0 to 15.5.27 in /packages/next-codemod/lib/__tests__/fixtures/agents-md/next-specific-version",
+          "operationType": "create",
+          "reason": "Recreate open pull request #28 \"Bump next from 15.4.0 to 15.5.27 in /packages/next-codemod/lib/__tests__/fixtures/agents-md/next-specific-version\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:27",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:11.307Z",
+          "resourceType": "pull-request",
+          "resourceName": "#27 Bump mariadb from 2.5.6 to 3.2.5 in /turbopack/crates/turbopack-tracing/tests/node-file-trace",
+          "operationType": "create",
+          "reason": "Recreate open pull request #27 \"Bump mariadb from 2.5.6 to 3.2.5 in /turbopack/crates/turbopack-tracing/tests/node-file-trace\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:26",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:16.794Z",
+          "resourceType": "pull-request",
+          "resourceName": "#26 Bump @modelcontextprotocol/sdk from 1.18.1 to 1.31.0 in /packages/next",
+          "operationType": "create",
+          "reason": "Recreate open pull request #26 \"Bump @modelcontextprotocol/sdk from 1.18.1 to 1.31.0 in /packages/next\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:25",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:22.077Z",
+          "resourceType": "pull-request",
+          "resourceName": "#25 Bump payload from 1.9.2 to 3.90.0 in /examples/cms-payload",
+          "operationType": "create",
+          "reason": "Recreate open pull request #25 \"Bump payload from 1.9.2 to 3.90.0 in /examples/cms-payload\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:24",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:26.523Z",
+          "resourceType": "pull-request",
+          "resourceName": "#24 Bump xxhash-rust from 0.8.15 to 0.8.19 in /rspack",
+          "operationType": "create",
+          "reason": "Recreate open pull request #24 \"Bump xxhash-rust from 0.8.15 to 0.8.19 in /rspack\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:23",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:31.029Z",
+          "resourceType": "pull-request",
+          "resourceName": "#23 Bump devalue from 2.0.1 to 5.9.3 in /packages/next",
+          "operationType": "create",
+          "reason": "Recreate open pull request #23 \"Bump devalue from 2.0.1 to 5.9.3 in /packages/next\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:22",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:35.119Z",
+          "resourceType": "pull-request",
+          "resourceName": "#22 Bump devalue from 2.0.1 to 5.9.3",
+          "operationType": "create",
+          "reason": "Recreate open pull request #22 \"Bump devalue from 2.0.1 to 5.9.3\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:21",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:40.590Z",
+          "resourceType": "pull-request",
+          "resourceName": "#21 Bump vm2 from 3.10.5 to 3.12.2 in /turbopack/crates/turbopack-tracing/tests/node-file-trace",
+          "operationType": "create",
+          "reason": "Recreate open pull request #21 \"Bump vm2 from 3.10.5 to 3.12.2 in /turbopack/crates/turbopack-tracing/tests/node-file-trace\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:20",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:45.175Z",
+          "resourceType": "pull-request",
+          "resourceName": "#20 Bump axios from 1.13.6 to 1.20.0 in /turbopack/crates/turbopack-tracing/tests/node-file-trace",
+          "operationType": "create",
+          "reason": "Recreate open pull request #20 \"Bump axios from 1.13.6 to 1.20.0 in /turbopack/crates/turbopack-tracing/tests/node-file-trace\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:19",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:49.368Z",
+          "resourceType": "pull-request",
+          "resourceName": "#19 Bump next from 16.2.3 to 16.4.0",
+          "operationType": "create",
+          "reason": "Recreate open pull request #19 \"Bump next from 16.2.3 to 16.4.0\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:17",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:54.362Z",
+          "resourceType": "pull-request",
+          "resourceName": "#17 Bump fast-uri from 3.0.6 to 3.1.8 in /turbopack/benchmark-apps",
+          "operationType": "create",
+          "reason": "Recreate open pull request #17 \"Bump fast-uri from 3.0.6 to 3.1.8 in /turbopack/benchmark-apps\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:16",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:58.449Z",
+          "resourceType": "pull-request",
+          "resourceName": "#16 Bump socket.io from 2.5.0 to 2.5.1 in /turbopack/crates/turbopack-tracing/tests/node-file-trace",
+          "operationType": "create",
+          "reason": "Recreate open pull request #16 \"Bump socket.io from 2.5.0 to 2.5.1 in /turbopack/crates/turbopack-tracing/tests/node-file-trace\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:14",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:02.797Z",
+          "resourceType": "pull-request",
+          "resourceName": "#14 Bump js-yaml from 4.2.0 to 4.3.2 in /packages/next-codemod",
+          "operationType": "create",
+          "reason": "Recreate open pull request #14 \"Bump js-yaml from 4.2.0 to 4.3.2 in /packages/next-codemod\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:12",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:07.283Z",
+          "resourceType": "pull-request",
+          "resourceName": "#12 Bump js-yaml from 4.2.0 to 4.3.2",
+          "operationType": "create",
+          "reason": "Recreate open pull request #12 \"Bump js-yaml from 4.2.0 to 4.3.2\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:11",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:11.467Z",
+          "resourceType": "pull-request",
+          "resourceName": "#11 Bump next from 10.0.4 to 15.5.24 in /examples/with-paste-typescript",
+          "operationType": "create",
+          "reason": "Recreate open pull request #11 \"Bump next from 10.0.4 to 15.5.24 in /examples/with-paste-typescript\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:10",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:16.056Z",
+          "resourceType": "pull-request",
+          "resourceName": "#10 Bump next from 13.4.2 to 15.5.24 in /examples/with-clerk",
+          "operationType": "create",
+          "reason": "Recreate open pull request #10 \"Bump next from 13.4.2 to 15.5.24 in /examples/with-clerk\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:8",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:20.442Z",
+          "resourceType": "pull-request",
+          "resourceName": "#8 Bump next from 14.2.2 to 15.5.24 in /examples/with-storybook",
+          "operationType": "create",
+          "reason": "Recreate open pull request #8 \"Bump next from 14.2.2 to 15.5.24 in /examples/with-storybook\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:7",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:24.829Z",
+          "resourceType": "pull-request",
+          "resourceName": "#7 Bump baseline-browser-mapping from 2.9.19 to 2.11.0",
+          "operationType": "create",
+          "reason": "Recreate open pull request #7 \"Bump baseline-browser-mapping from 2.9.19 to 2.11.0\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:6",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:29.318Z",
+          "resourceType": "pull-request",
+          "resourceName": "#6 Bump browserslist from 4.28.1 to 4.28.7",
+          "operationType": "create",
+          "reason": "Recreate open pull request #6 \"Bump browserslist from 4.28.1 to 4.28.7\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:5",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:33.478Z",
+          "resourceType": "pull-request",
+          "resourceName": "#5 Bump browserslist from 4.24.5 to 4.28.9 in /turbopack/benchmark-apps",
+          "operationType": "create",
+          "reason": "Recreate open pull request #5 \"Bump browserslist from 4.24.5 to 4.28.9 in /turbopack/benchmark-apps\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:4",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:37.734Z",
+          "resourceType": "pull-request",
+          "resourceName": "#4 Bump nanoid from 3.1.30 to 3.3.18",
+          "operationType": "create",
+          "reason": "Recreate open pull request #4 \"Bump nanoid from 3.1.30 to 3.3.18\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-request:next.js:3",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:41.883Z",
+          "resourceType": "pull-request",
+          "resourceName": "#3 Bump nanoid from 3.1.32 to 3.3.18 in /packages/next",
+          "operationType": "create",
+          "reason": "Recreate open pull request #3 \"Bump nanoid from 3.1.32 to 3.3.18 in /packages/next\".",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        },
+        {
+          "operationId": "pull-requests-archive:next.js",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:43.301Z",
+          "resourceType": "pull-requests-archive",
+          "resourceName": "Historical Pull Requests Archive",
+          "operationType": "create",
+          "reason": "Archive 6 closed/merged pull requests into historical audit issue.",
+          "targetIdentifier": "demogxp-mig9/next.js"
+        }
+      ],
+      "durationMs": 111841,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/next.js",
+      "scopeLevel": "repository"
+    }
+  ],
+  "recommendations": [
+    "GEI omitted issues metadata for demogxp-mig9/next.js. Recommended fallback module: 'issues'.",
+    "GEI omitted pull-requests metadata for demogxp-mig9/next.js. Recommended fallback module: 'pull-requests'.",
+    "GEI omitted releases metadata for demogxp-mig9/next.js. Recommended fallback module: 'releases'."
+  ]
+}

@@ -1,0 +1,1303 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450259708-f806a1f0",
+  "executedAt": "2026-10-19T23:27:22.267Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-kubernetes",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:01:00.384Z",
+          "resourceType": "repository",
+          "resourceName": "kubernetes",
+          "operationType": "create",
+          "reason": "Transferred repository \"kubernetes\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/kubernetes"
+        }
+      ],
+      "durationMs": 532612,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:kubernetes",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:01:03.595Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/kubernetes",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://kubernetes.io\", archived: false -> true",
+          "targetIdentifier": "demogxp-mig9/kubernetes"
+        }
+      ],
+      "durationMs": 1210,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:kubernetes",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:01:07.142Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "kubernetes",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/kubernetes"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:kubernetes",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:01:10.691Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "kubernetes",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/kubernetes"
+        }
+      ],
+      "durationMs": 2879,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/kubernetes",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-ghec-content-filler",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:05:07.820Z",
+          "resourceType": "repository",
+          "resourceName": "ghec-content-filler",
+          "operationType": "create",
+          "reason": "Transferred repository \"ghec-content-filler\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 232298,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:ghec-content-filler",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:05:10.336Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/ghec-content-filler",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", squash_merge_commit_title: \"COMMIT_OR_PR_TITLE\" -> \"PR_TITLE\", squash_merge_commit_message: \"COMMIT_MESSAGES\" -> \"PR_BODY\", merge_commit_title: \"MERGE_MESSAGE\" -> \"PR_TITLE\", merge_commit_message: \"PR_TITLE\" -> \"PR_BODY\"",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 1016,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-variables:ghec-content-filler:MIGRATION_DEMO_MODE",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:05:11.058Z",
+          "resourceType": "variable",
+          "resourceName": "MIGRATION_DEMO_MODE",
+          "operationType": "create",
+          "reason": "Variable exists in source but is missing in destination.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 188,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-secrets:ghec-content-filler:actions:DEMO_ADMIN_TOKEN",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:05:12.984Z",
+          "resourceType": "secret",
+          "resourceName": "DEMO_ADMIN_TOKEN",
+          "operationType": "create",
+          "reason": "A actions secret is missing on the target.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "repo-secrets:ghec-content-filler:actions:MIGRATION_DEMO_ACTIONS_SECRET",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:05:13.350Z",
+          "resourceType": "secret",
+          "resourceName": "MIGRATION_DEMO_ACTIONS_SECRET",
+          "operationType": "create",
+          "reason": "A actions secret is missing on the target.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "repo-secrets:ghec-content-filler:dependabot:MIGRATION_DEMO_DEPENDABOT_SECRET",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:05:13.729Z",
+          "resourceType": "secret",
+          "resourceName": "MIGRATION_DEMO_DEPENDABOT_SECRET",
+          "operationType": "create",
+          "reason": "A dependabot secret is missing on the target.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "repo-secrets:ghec-content-filler:codespaces:MIGRATION_DEMO_CODESPACES_SECRET",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:05:14.337Z",
+          "resourceType": "secret",
+          "resourceName": "MIGRATION_DEMO_CODESPACES_SECRET",
+          "operationType": "create",
+          "reason": "A codespaces secret is missing on the target.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 1707,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "environments:ghec-content-filler:github-pages",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:05:16.380Z",
+          "resourceType": "environment",
+          "resourceName": "github-pages",
+          "operationType": "noop",
+          "reason": "Environment \"github-pages\" matches in destination.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "environments:ghec-content-filler:github-pages:branch-policy:gh-pages",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:05:16.599Z",
+          "resourceType": "environment-branch-policy",
+          "resourceName": "github-pages/gh-pages",
+          "operationType": "create",
+          "reason": "Branch policy \"gh-pages\" is missing on target environment \"github-pages\".",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "environments:ghec-content-filler:github-pages:branch-policy:migration-demo-pages",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:05:16.599Z",
+          "resourceType": "environment-branch-policy",
+          "resourceName": "github-pages/migration-demo-pages",
+          "operationType": "noop",
+          "reason": "Branch policy \"migration-demo-pages\" already exists on target environment \"github-pages\".",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "environments:ghec-content-filler:migration-demo-environment",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:05:16.846Z",
+          "resourceType": "environment",
+          "resourceName": "migration-demo-environment",
+          "operationType": "create",
+          "reason": "Environment \"migration-demo-environment\" does not exist in destination.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "environments:ghec-content-filler:migration-demo-environment:branch-policy:migration-demo-*",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:05:17.095Z",
+          "resourceType": "environment-branch-policy",
+          "resourceName": "migration-demo-environment/migration-demo-*",
+          "operationType": "create",
+          "reason": "Branch policy \"migration-demo-*\" is missing on target environment \"migration-demo-environment\".",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "environments:ghec-content-filler:migration-demo-environment:variable:MIGRATION_DEMO_MODE",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:05:17.307Z",
+          "resourceType": "environment-variable",
+          "resourceName": "migration-demo-environment/MIGRATION_DEMO_MODE",
+          "operationType": "create",
+          "reason": "Variable \"MIGRATION_DEMO_MODE\" is missing on target environment \"migration-demo-environment\".",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "environments:ghec-content-filler:migration-demo-environment:secret:MIGRATION_DEMO_ACTIONS_SECRET",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:05:17.672Z",
+          "resourceType": "environment-secret",
+          "resourceName": "migration-demo-environment/MIGRATION_DEMO_ACTIONS_SECRET",
+          "operationType": "create",
+          "reason": "Secret \"MIGRATION_DEMO_ACTIONS_SECRET\" is missing on target environment \"migration-demo-environment\".",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 1292,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "webhooks:demogxp-mig9/ghec-content-filler:https://migration-demo.invalid/migration-demo-1361857985/repo",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:05:18.101Z",
+          "resourceType": "webhook",
+          "resourceName": "https://migration-demo.invalid/migration-demo-1361857985/repo",
+          "operationType": "noop",
+          "reason": "Webhook `https://migration-demo.invalid/migration-demo-1361857985/repo` already matches target configuration (inactive in sandbox rehearsal mode)",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:ghec-content-filler",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:05:19.127Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "ghec-content-filler",
+          "operationType": "update",
+          "reason": "Updating 2 custom property value(s) (migration-demo-1361857985-stage, open_source) on ghec-content-filler",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "ruleset-create-ghec-content-filler-migration-demo-ruleset",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:05:20.330Z",
+          "resourceType": "ruleset",
+          "resourceName": "migration-demo-ruleset",
+          "operationType": "create",
+          "reason": "Ruleset is missing on target.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        },
+        {
+          "operationId": "ruleset-create-ghec-content-filler-migration-demo-tag-ruleset",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:05:20.795Z",
+          "resourceType": "ruleset",
+          "resourceName": "migration-demo-tag-ruleset",
+          "operationType": "create",
+          "reason": "Ruleset is missing on target.",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 820,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:ghec-content-filler",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:05:23.109Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "ghec-content-filler",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 2822,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-autolink-noop-migration-demo-REF-",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:05:27.316Z",
+          "resourceType": "autolink",
+          "resourceName": "demogxp-mig9/ghec-content-filler:migration-demo-REF-",
+          "operationType": "noop",
+          "reason": "Autolink reference for prefix 'migration-demo-REF-' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-create-discussion-migration-demo-discussion",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:05:29.398Z",
+          "resourceType": "repository_discussion",
+          "resourceName": "migration-demo-discussion",
+          "operationType": "create",
+          "reason": "Rehydrating discussion \"migration-demo-discussion\" under category \"General\"",
+          "targetIdentifier": "demogxp-mig9/ghec-content-filler"
+        }
+      ],
+      "durationMs": 800,
+      "targetIdentifier": "demogxp-mig9/ghec-content-filler",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-migration-demo-1361857985-companion",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:08:28.215Z",
+          "resourceType": "repository",
+          "resourceName": "migration-demo-1361857985-companion",
+          "operationType": "create",
+          "reason": "Transferred repository \"migration-demo-1361857985-companion\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion"
+        }
+      ],
+      "durationMs": 180061,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:migration-demo-1361857985-companion",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:08:30.189Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/migration-demo-1361857985-companion",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:migration-demo-1361857985-companion",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:08:34.496Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "migration-demo-1361857985-companion",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:migration-demo-1361857985-companion",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:08:38.024Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "migration-demo-1361857985-companion",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion"
+        }
+      ],
+      "durationMs": 2827,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-companion",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-migration-demo-1361857985-fork",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:18:42.733Z",
+          "resourceType": "repository",
+          "resourceName": "migration-demo-1361857985-fork",
+          "operationType": "create",
+          "reason": "Transferred repository \"migration-demo-1361857985-fork\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork"
+        }
+      ],
+      "durationMs": 599827,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:migration-demo-1361857985-fork",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:18:44.933Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/migration-demo-1361857985-fork",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\"",
+          "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork"
+        }
+      ],
+      "durationMs": 812,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:migration-demo-1361857985-fork",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:18:48.918Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "migration-demo-1361857985-fork",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 1,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:migration-demo-1361857985-fork",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:18:51.612Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "migration-demo-1361857985-fork",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork"
+        }
+      ],
+      "durationMs": 2804,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/migration-demo-1361857985-fork",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-grafana",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:26:45.363Z",
+          "resourceType": "repository",
+          "resourceName": "grafana",
+          "operationType": "create",
+          "reason": "Transferred repository \"grafana\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        }
+      ],
+      "durationMs": 469649,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:grafana",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:26:48.095Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/grafana",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://grafana.com\", archived: false -> true",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        }
+      ],
+      "durationMs": 668,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:grafana",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:26:51.939Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "grafana",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "ruleset-create-grafana-Protected Tags",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T23:26:52.978Z",
+          "resourceType": "ruleset",
+          "resourceName": "Protected Tags",
+          "operationType": "create",
+          "reason": "Ruleset is missing on target.",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        }
+      ],
+      "durationMs": 387,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:grafana:.github/CODEOWNERS",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "codeowners-file",
+          "resourceName": ".github/CODEOWNERS",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/CODEOWNERS already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/alerting-update-module.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/alerting-update-module.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/alerting-update-module.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/build-docker-variants.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/build-docker-variants.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/build-docker-variants.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/build-go-matrix.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/build-go-matrix.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/build-go-matrix.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/check-frontend-test-coverage.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/check-frontend-test-coverage.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/check-frontend-test-coverage.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/cleanup-branches.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/cleanup-branches.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/cleanup-branches.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/documentation-ci.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/documentation-ci.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/documentation-ci.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/issue-opened.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/issue-opened.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/issue-opened.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/pr-build-grafana.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/pr-build-grafana.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/pr-build-grafana.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/pr-diagnostics-e2e.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/pr-diagnostics-e2e.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/pr-diagnostics-e2e.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/pr-test-docker.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/pr-test-docker.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/pr-test-docker.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/release-build.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/release-build.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/release-build.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/release-npm.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/release-npm.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/release-npm.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        },
+        {
+          "operationId": "codeowners:grafana:.github/workflows/report-frontend-coverage-to-bench.yaml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:13.655Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/report-frontend-coverage-to-bench.yaml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/report-frontend-coverage-to-bench.yaml already match target organization",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:grafana",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:27:14.559Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "grafana",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/grafana"
+        }
+      ],
+      "durationMs": 2839,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 1,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/grafana",
+      "scopeLevel": "repository"
+    }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450269354-b5de43e7",
+  "executedAt": "2026-10-19T22:53:53.057Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-mirror-push-WebKit",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:53:20.617Z",
+          "resourceType": "repository",
+          "resourceName": "WebKit",
+          "operationType": "create",
+          "reason": "Transferred repository \"WebKit\" via direct Git mirror-push (121768ms); metadata queued for sidecar rehydration. GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        }
+      ],
+      "durationMs": 122836,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": [
+        "issues",
+        "pull-requests",
+        "releases"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:WebKit",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:22.259Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/WebKit",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", has_issues: true -> false, description: \"\" -> \"Home of the WebKit project, the browser engine used by Safari, Mail, App Store and many other applications on macOS, iOS and Linux.\", archived: false -> true",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        }
+      ],
+      "durationMs": 738,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:WebKit",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:53:25.333Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "WebKit",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:WebKit:.github/CODEOWNERS",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:53:26.486Z",
+          "resourceType": "codeowners-file",
+          "resourceName": ".github/CODEOWNERS",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/CODEOWNERS already match target organization",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:WebKit",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:53:27.134Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "WebKit",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        }
+      ],
+      "durationMs": 2843,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "releases",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "issues",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "label:WebKit:accessibility",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:32.717Z",
+          "resourceType": "issue-label",
+          "resourceName": "accessibility",
+          "operationType": "noop",
+          "reason": "Label \"accessibility\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:bug",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:32.717Z",
+          "resourceType": "issue-label",
+          "resourceName": "bug",
+          "operationType": "noop",
+          "reason": "Label \"bug\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:dependencies",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:32.968Z",
+          "resourceType": "issue-label",
+          "resourceName": "dependencies",
+          "operationType": "create",
+          "reason": "Create label \"dependencies\".",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:documentation",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:32.968Z",
+          "resourceType": "issue-label",
+          "resourceName": "documentation",
+          "operationType": "noop",
+          "reason": "Label \"documentation\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:duplicate",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:32.968Z",
+          "resourceType": "issue-label",
+          "resourceName": "duplicate",
+          "operationType": "noop",
+          "reason": "Label \"duplicate\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:enhancement",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:32.968Z",
+          "resourceType": "issue-label",
+          "resourceName": "enhancement",
+          "operationType": "noop",
+          "reason": "Label \"enhancement\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:good first issue",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:32.968Z",
+          "resourceType": "issue-label",
+          "resourceName": "good first issue",
+          "operationType": "noop",
+          "reason": "Label \"good first issue\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:help wanted",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:32.968Z",
+          "resourceType": "issue-label",
+          "resourceName": "help wanted",
+          "operationType": "noop",
+          "reason": "Label \"help wanted\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:invalid",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:32.968Z",
+          "resourceType": "issue-label",
+          "resourceName": "invalid",
+          "operationType": "noop",
+          "reason": "Label \"invalid\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:javascript",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:33.298Z",
+          "resourceType": "issue-label",
+          "resourceName": "javascript",
+          "operationType": "create",
+          "reason": "Create label \"javascript\".",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:question",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:33.299Z",
+          "resourceType": "issue-label",
+          "resourceName": "question",
+          "operationType": "noop",
+          "reason": "Label \"question\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "label:WebKit:wontfix",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:33.299Z",
+          "resourceType": "issue-label",
+          "resourceName": "wontfix",
+          "operationType": "noop",
+          "reason": "Label \"wontfix\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        }
+      ],
+      "durationMs": 803,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "pull-requests",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "pull-request:WebKit:3",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:39.308Z",
+          "resourceType": "pull-request",
+          "resourceName": "#3 Bump handlebars from 4.0.6 to 4.7.10 in /Websites/browserbench.org/Speedometer3.0/resources/todomvc/architecture-examples/jquery",
+          "operationType": "create",
+          "reason": "Recreate open pull request #3 \"Bump handlebars from 4.0.6 to 4.7.10 in /Websites/browserbench.org/Speedometer3.0/resources/todomvc/architecture-examples/jquery\".",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "pull-request:WebKit:2",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:44.713Z",
+          "resourceType": "pull-request",
+          "resourceName": "#2 Bump handlebars and @angular/cli in /PerformanceTests/Speedometer/resources/todomvc/architecture-examples/angular",
+          "operationType": "create",
+          "reason": "Recreate open pull request #2 \"Bump handlebars and @angular/cli in /PerformanceTests/Speedometer/resources/todomvc/architecture-examples/angular\".",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        },
+        {
+          "operationId": "pull-request:WebKit:1",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:50.626Z",
+          "resourceType": "pull-request",
+          "resourceName": "#1 Bump qs from 6.11.2 to 6.16.0 in /Websites/browserbench.org/Speedometer3.1/resources/todomvc/vanilla-examples/javascript-web-components",
+          "operationType": "create",
+          "reason": "Recreate open pull request #1 \"Bump qs from 6.11.2 to 6.16.0 in /Websites/browserbench.org/Speedometer3.1/resources/todomvc/vanilla-examples/javascript-web-components\".",
+          "targetIdentifier": "demogxp-mig9/WebKit"
+        }
+      ],
+      "durationMs": 16655,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/WebKit",
+      "scopeLevel": "repository"
+    }
+  ],
+  "recommendations": [
+    "GEI omitted issues metadata for demogxp-mig9/WebKit. Recommended fallback module: 'issues'.",
+    "GEI omitted pull-requests metadata for demogxp-mig9/WebKit. Recommended fallback module: 'pull-requests'.",
+    "GEI omitted releases metadata for demogxp-mig9/WebKit. Recommended fallback module: 'releases'."
+  ]
+}

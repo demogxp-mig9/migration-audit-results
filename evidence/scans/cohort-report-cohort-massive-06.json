@@ -1,0 +1,348 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450273183-c7e1da5c",
+  "executedAt": "2026-10-19T22:52:28.195Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-mirror-push-linux",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:52:12.528Z",
+          "resourceType": "repository",
+          "resourceName": "linux",
+          "operationType": "create",
+          "reason": "Transferred repository \"linux\" via direct Git mirror-push (49439ms); metadata queued for sidecar rehydration. GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        }
+      ],
+      "durationMs": 50490,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": [
+        "issues",
+        "pull-requests",
+        "releases"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:linux",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:14.313Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/linux",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", has_issues: true -> false, has_wiki: true -> false, description: \"\" -> \"Linux kernel source tree\", archived: false -> true",
+          "targetIdentifier": "demogxp-mig9/linux"
+        }
+      ],
+      "durationMs": 788,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:linux",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:52:17.369Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "linux",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/linux"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:linux",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:52:19.822Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "linux",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/linux"
+        }
+      ],
+      "durationMs": 2804,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "releases",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "issues",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "label:linux:accessibility",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "accessibility",
+          "operationType": "noop",
+          "reason": "Label \"accessibility\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        },
+        {
+          "operationId": "label:linux:bug",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "bug",
+          "operationType": "noop",
+          "reason": "Label \"bug\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        },
+        {
+          "operationId": "label:linux:documentation",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "documentation",
+          "operationType": "noop",
+          "reason": "Label \"documentation\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        },
+        {
+          "operationId": "label:linux:duplicate",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "duplicate",
+          "operationType": "noop",
+          "reason": "Label \"duplicate\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        },
+        {
+          "operationId": "label:linux:enhancement",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "enhancement",
+          "operationType": "noop",
+          "reason": "Label \"enhancement\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        },
+        {
+          "operationId": "label:linux:good first issue",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "good first issue",
+          "operationType": "noop",
+          "reason": "Label \"good first issue\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        },
+        {
+          "operationId": "label:linux:help wanted",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "help wanted",
+          "operationType": "noop",
+          "reason": "Label \"help wanted\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        },
+        {
+          "operationId": "label:linux:invalid",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "invalid",
+          "operationType": "noop",
+          "reason": "Label \"invalid\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        },
+        {
+          "operationId": "label:linux:question",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "question",
+          "operationType": "noop",
+          "reason": "Label \"question\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        },
+        {
+          "operationId": "label:linux:wontfix",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:25.244Z",
+          "resourceType": "issue-label",
+          "resourceName": "wontfix",
+          "operationType": "noop",
+          "reason": "Label \"wontfix\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/linux"
+        }
+      ],
+      "durationMs": 276,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "pull-requests",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/linux",
+      "scopeLevel": "repository"
+    }
+  ],
+  "recommendations": [
+    "GEI omitted issues metadata for demogxp-mig9/linux. Recommended fallback module: 'issues'.",
+    "GEI omitted pull-requests metadata for demogxp-mig9/linux. Recommended fallback module: 'pull-requests'.",
+    "GEI omitted releases metadata for demogxp-mig9/linux. Recommended fallback module: 'releases'."
+  ]
+}

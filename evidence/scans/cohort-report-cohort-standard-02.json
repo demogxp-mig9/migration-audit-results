@@ -1,0 +1,1018 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450270753-7a2a08dc",
+  "executedAt": "2026-10-19T23:22:40.845Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-dummy-repo-public",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:58:24.822Z",
+          "resourceType": "repository",
+          "resourceName": "dummy-repo-public",
+          "operationType": "create",
+          "reason": "Transferred repository \"dummy-repo-public\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/dummy-repo-public"
+        }
+      ],
+      "durationMs": 394640,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository",
+      "metadataState": "complete",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:dummy-repo-public",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:58:26.719Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/dummy-repo-public",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\"",
+          "targetIdentifier": "demogxp-mig9/dummy-repo-public"
+        }
+      ],
+      "durationMs": 634,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-variables:dummy-repo-public:APP_ENV",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:58:27.436Z",
+          "resourceType": "variable",
+          "resourceName": "APP_ENV",
+          "operationType": "create",
+          "reason": "Variable exists in source but is missing in destination.",
+          "targetIdentifier": "demogxp-mig9/dummy-repo-public"
+        },
+        {
+          "operationId": "repo-variables:dummy-repo-public:LOG_LEVEL",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:58:27.642Z",
+          "resourceType": "variable",
+          "resourceName": "LOG_LEVEL",
+          "operationType": "create",
+          "reason": "Variable exists in source but is missing in destination.",
+          "targetIdentifier": "demogxp-mig9/dummy-repo-public"
+        }
+      ],
+      "durationMs": 352,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "environments:dummy-repo-public:production",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:58:29.705Z",
+          "resourceType": "environment",
+          "resourceName": "production",
+          "operationType": "create",
+          "reason": "Environment \"production\" does not exist in destination.",
+          "targetIdentifier": "demogxp-mig9/dummy-repo-public"
+        }
+      ],
+      "durationMs": 234,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:dummy-repo-public",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:58:30.598Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "dummy-repo-public",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/dummy-repo-public"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:dummy-repo-public",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:58:32.513Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "dummy-repo-public",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/dummy-repo-public"
+        }
+      ],
+      "durationMs": 2841,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/dummy-repo-public",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-flask",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:01:25.591Z",
+          "resourceType": "repository",
+          "resourceName": "flask",
+          "operationType": "create",
+          "reason": "Transferred repository \"flask\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/flask"
+        }
+      ],
+      "durationMs": 168539,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:flask",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:01:27.613Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/flask",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://flask.palletsprojects.com\"",
+          "targetIdentifier": "demogxp-mig9/flask"
+        }
+      ],
+      "durationMs": 625,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:flask",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:01:30.700Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "flask",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/flask"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:flask",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:01:33.748Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "flask",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/flask"
+        }
+      ],
+      "durationMs": 2736,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/flask",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-svelte",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:06:45.254Z",
+          "resourceType": "repository",
+          "resourceName": "svelte",
+          "operationType": "create",
+          "reason": "Transferred repository \"svelte\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/svelte"
+        }
+      ],
+      "durationMs": 307163,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:svelte",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:06:47.207Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/svelte",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://svelte.dev\"",
+          "targetIdentifier": "demogxp-mig9/svelte"
+        }
+      ],
+      "durationMs": 664,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:svelte",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:06:50.351Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "svelte",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/svelte"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:svelte:.github/workflows/ci.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:06:52.685Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/ci.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/ci.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/svelte"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:svelte",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:06:53.568Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "svelte",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/svelte"
+        }
+      ],
+      "durationMs": 2746,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/svelte",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-rust",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:18:29.594Z",
+          "resourceType": "repository",
+          "resourceName": "rust",
+          "operationType": "create",
+          "reason": "Transferred repository \"rust\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/rust"
+        }
+      ],
+      "durationMs": 692568,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:rust",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:18:32.540Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/rust",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://www.rust-lang.org\", archived: false -> true",
+          "targetIdentifier": "demogxp-mig9/rust"
+        }
+      ],
+      "durationMs": 799,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:rust",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:18:35.616Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "rust",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/rust"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:rust:.github/ISSUE_TEMPLATE/tracking_issue.md",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:18:38.979Z",
+          "resourceType": "issue-template-team-ref",
+          "resourceName": ".github/ISSUE_TEMPLATE/tracking_issue.md",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/ISSUE_TEMPLATE/tracking_issue.md already match target organization",
+          "targetIdentifier": "demogxp-mig9/rust"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:rust",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:18:39.708Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "rust",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/rust"
+        }
+      ],
+      "durationMs": 2764,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/rust",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-ansible",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:22:16.239Z",
+          "resourceType": "repository",
+          "resourceName": "ansible",
+          "operationType": "create",
+          "reason": "Transferred repository \"ansible\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/ansible"
+        }
+      ],
+      "durationMs": 217378,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:ansible",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:22:27.419Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/ansible",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://www.ansible.com/\"",
+          "targetIdentifier": "demogxp-mig9/ansible"
+        }
+      ],
+      "durationMs": 4488,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:ansible",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:22:30.756Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "ansible",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/ansible"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:ansible",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:22:33.818Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "ansible",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/ansible"
+        }
+      ],
+      "durationMs": 2808,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/ansible",
+      "scopeLevel": "repository"
+    }
+  ]
+}

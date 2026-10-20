@@ -1,0 +1,981 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450277951-299e0887",
+  "executedAt": "2026-10-19T23:16:11.535Z",
+  "status": "partial",
+  "exitCode": 4,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-nest",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:58:29.513Z",
+          "resourceType": "repository",
+          "resourceName": "nest",
+          "operationType": "create",
+          "reason": "Transferred repository \"nest\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/nest"
+        }
+      ],
+      "durationMs": 372835,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:nest",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:58:31.555Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/nest",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://nestjs.com\"",
+          "targetIdentifier": "demogxp-mig9/nest"
+        }
+      ],
+      "durationMs": 663,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:nest",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:58:35.032Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "nest",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/nest"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:nest:.github/ISSUE_TEMPLATE/Bug_report.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:58:37.781Z",
+          "resourceType": "issue-template-team-ref",
+          "resourceName": ".github/ISSUE_TEMPLATE/Bug_report.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/ISSUE_TEMPLATE/Bug_report.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/nest"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:nest",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:58:38.703Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "nest",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/nest"
+        }
+      ],
+      "durationMs": 2789,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/nest",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-prometheus",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:02:15.927Z",
+          "resourceType": "repository",
+          "resourceName": "prometheus",
+          "operationType": "create",
+          "reason": "Transferred repository \"prometheus\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/prometheus"
+        }
+      ],
+      "durationMs": 212512,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:prometheus",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:02:18.045Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/prometheus",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://prometheus.io/\"",
+          "targetIdentifier": "demogxp-mig9/prometheus"
+        }
+      ],
+      "durationMs": 611,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:prometheus",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:02:21.801Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "prometheus",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/prometheus"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:prometheus:CODEOWNERS",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:02:26.939Z",
+          "resourceType": "codeowners-file",
+          "resourceName": "CODEOWNERS",
+          "operationType": "noop",
+          "reason": "Team ownership references in CODEOWNERS already match target organization",
+          "targetIdentifier": "demogxp-mig9/prometheus"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:prometheus",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:02:27.875Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "prometheus",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/prometheus"
+        }
+      ],
+      "durationMs": 2772,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/prometheus",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-core",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:06:26.869Z",
+          "resourceType": "repository",
+          "resourceName": "core",
+          "operationType": "create",
+          "reason": "Transferred repository \"core\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/core"
+        }
+      ],
+      "durationMs": 234366,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:core",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:06:29.127Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/core",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://vuejs.org/\"",
+          "targetIdentifier": "demogxp-mig9/core"
+        }
+      ],
+      "durationMs": 692,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:core",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:06:33.272Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "core",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/core"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:core",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:06:37.960Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "core",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/core"
+        }
+      ],
+      "durationMs": 2820,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/core",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-migration-react",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:10:05.225Z",
+          "resourceType": "repository",
+          "resourceName": "react",
+          "operationType": "create",
+          "reason": "Transferred repository \"react\" via GitHub Enterprise Importer (GEI). GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/react"
+        }
+      ],
+      "durationMs": 202454,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:react",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:10:08.577Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/react",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", homepage: \"\" -> \"https://react.dev\"",
+          "targetIdentifier": "demogxp-mig9/react"
+        }
+      ],
+      "durationMs": 1632,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:react",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:10:12.571Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "react",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/react"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:react:.github/workflows/compiler_playground.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:10:19.700Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/compiler_playground.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/compiler_playground.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/react"
+        },
+        {
+          "operationId": "codeowners:react:.github/workflows/devtools_regression_tests.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:10:19.700Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/devtools_regression_tests.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/devtools_regression_tests.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/react"
+        },
+        {
+          "operationId": "codeowners:react:.github/workflows/runtime_build_and_test.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:10:19.700Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/runtime_build_and_test.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/runtime_build_and_test.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/react"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:react",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:10:20.642Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "react",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/react"
+        }
+      ],
+      "durationMs": 2797,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/react",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "failed",
+      "results": [
+        {
+          "operationId": "gei-repo-error-runner",
+          "status": "failed",
+          "error": "GEI migrate-repo failed with exit code 1: [2026-10-19 23:15:09] [ERROR] Migration Failed. Migration ID: RM_kgTaACQzOTIxOWQwZC1mY2U1LTRmNjMtODhiMy05ZmUwYjExMDc0MWQ\n[2026-10-19 23:15:09] [ERROR] An unexpected error has caused the migration to fail. Please re-run the migration.",
+          "completedAt": "2026-10-19T23:16:11.535Z",
+          "resourceType": "repository",
+          "resourceName": "runner",
+          "operationType": "create",
+          "targetIdentifier": "demogxp-mig9/runner"
+        }
+      ],
+      "durationMs": 345397,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "metadataState": "failed",
+      "failedMetadataCategories": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository",
+      "results": []
+    }
+  ]
+}

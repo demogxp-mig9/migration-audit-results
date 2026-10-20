@@ -1,0 +1,1313 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792453909813-2c50c5b6",
+  "executedAt": "2026-10-19T23:53:38.085Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-variables",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "org-variables:demogxp-mig9:ENABLE_MAINTENANCE_MODE",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.093Z",
+          "resourceType": "organization-variable",
+          "resourceName": "ENABLE_MAINTENANCE_MODE",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-variables:demogxp-mig9:GLOBAL_REGION",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.093Z",
+          "resourceType": "organization-variable",
+          "resourceName": "GLOBAL_REGION",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-variables:demogxp-mig9:MIGRATION_DEMO_1361857985_MODE",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.093Z",
+          "resourceType": "organization-variable",
+          "resourceName": "MIGRATION_DEMO_1361857985_MODE",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-variables:demogxp-mig9:SUPER_ORG_VARIABLE1",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.093Z",
+          "resourceType": "organization-variable",
+          "resourceName": "SUPER_ORG_VARIABLE1",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-variables:demogxp-mig9:agents:SUPER_AGENT_ORG_VARIABLE122",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.093Z",
+          "resourceType": "organization-variable",
+          "resourceName": "SUPER_AGENT_ORG_VARIABLE122",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-secrets",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "org-secrets:demogxp-mig9:actions:DEMO_ACTIONS_SECRET",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.094Z",
+          "resourceType": "organization-secret",
+          "resourceName": "DEMO_ACTIONS_SECRET",
+          "operationType": "noop",
+          "reason": "actions organization secret (selected visibility) scope matches target; verify secret value is populated.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:actions:GHEC_TOKEN",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.094Z",
+          "resourceType": "organization-secret",
+          "resourceName": "GHEC_TOKEN",
+          "operationType": "noop",
+          "reason": "actions organization secret (selected visibility) scope matches target; verify secret value is populated.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:actions:MIGRATION_DEMO_1361857985_ACTIONS_SECRET",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.094Z",
+          "resourceType": "organization-secret",
+          "resourceName": "MIGRATION_DEMO_1361857985_ACTIONS_SECRET",
+          "operationType": "noop",
+          "reason": "actions organization secret (selected visibility) scope matches target; verify secret value is populated.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:actions:SUPER_ORG_SECRET12",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.094Z",
+          "resourceType": "organization-secret",
+          "resourceName": "SUPER_ORG_SECRET12",
+          "operationType": "noop",
+          "reason": "actions organization secret (private visibility) scope matches target; verify secret value is populated.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:dependabot:DEMO_DEPENDABOT_SECRET",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.094Z",
+          "resourceType": "organization-secret",
+          "resourceName": "DEMO_DEPENDABOT_SECRET",
+          "operationType": "noop",
+          "reason": "dependabot organization secret (selected visibility) scope matches target; verify secret value is populated.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:dependabot:SUPER_DEPENDA_ORG_SECRET1",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.094Z",
+          "resourceType": "organization-secret",
+          "resourceName": "SUPER_DEPENDA_ORG_SECRET1",
+          "operationType": "noop",
+          "reason": "dependabot organization secret (private visibility) scope matches target; verify secret value is populated.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:codespaces:MIGRATION_DEMO_1361857985_CODESPACES_SECRET",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.094Z",
+          "resourceType": "organization-secret",
+          "resourceName": "MIGRATION_DEMO_1361857985_CODESPACES_SECRET",
+          "operationType": "noop",
+          "reason": "codespaces organization secret (selected visibility) scope matches target; verify secret value is populated.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:codespaces:SUPER_CODE_ORG_122",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.094Z",
+          "resourceType": "organization-secret",
+          "resourceName": "SUPER_CODE_ORG_122",
+          "operationType": "noop",
+          "reason": "codespaces organization secret (private visibility) scope matches target; verify secret value is populated.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-secrets:demogxp-mig9:agents:SUPER_AGENT_ORG_SECRET2212",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.094Z",
+          "resourceType": "organization-secret",
+          "resourceName": "SUPER_AGENT_ORG_SECRET2212",
+          "operationType": "noop",
+          "reason": "agents organization secret (private visibility) scope matches target; verify secret value is populated.",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-webhooks",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "org-webhooks:demogxp-mig9:https://migration-demo.invalid/migration-demo-1361857985/org",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "webhook",
+          "resourceName": "https://migration-demo.invalid/migration-demo-1361857985/org",
+          "operationType": "noop",
+          "reason": "Webhook `https://migration-demo.invalid/migration-demo-1361857985/org` already matches target configuration (inactive in sandbox rehearsal mode)",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-webhooks:demogxp-mig9:https://httpbin.org/post",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "webhook",
+          "resourceName": "https://httpbin.org/post",
+          "operationType": "noop",
+          "reason": "Webhook `https://httpbin.org/post` already matches target configuration (inactive in sandbox rehearsal mode)",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "org-custom-properties:demogxp-mig9:cost_center",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-property-schema",
+          "resourceName": "cost_center",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-custom-properties:demogxp-mig9:environment",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-property-schema",
+          "resourceName": "environment",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-custom-properties:demogxp-mig9:migration-demo-1361857985-stage",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-property-schema",
+          "resourceName": "migration-demo-1361857985-stage",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "org-custom-properties:demogxp-mig9:open_source",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-property-schema",
+          "resourceName": "open_source",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "custom-roles",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_admin",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_admin",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_admin' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_maintain",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_maintain",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_maintain' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_read",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_read",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_read' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_triage",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_triage",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_triage' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-all_repo_write",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "all_repo_write",
+          "operationType": "noop",
+          "reason": "Custom organization role 'all_repo_write' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-app_manager",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "app_manager",
+          "operationType": "noop",
+          "reason": "Custom organization role 'app_manager' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-ci_cd_admin",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "ci_cd_admin",
+          "operationType": "noop",
+          "reason": "Custom organization role 'ci_cd_admin' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-open_source_license_manager",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "open_source_license_manager",
+          "operationType": "noop",
+          "reason": "Custom organization role 'open_source_license_manager' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-custom-org-role-noop-security_manager",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.095Z",
+          "resourceType": "custom-organization-role",
+          "resourceName": "security_manager",
+          "operationType": "noop",
+          "reason": "Custom organization role 'security_manager' already matches target configuration",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "teams",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-team-noop-engineering",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.096Z",
+          "resourceType": "team",
+          "resourceName": "engineering",
+          "operationType": "noop",
+          "reason": "Team 'engineering' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-migration-demo-1361857985-team",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.096Z",
+          "resourceType": "team",
+          "resourceName": "migration-demo-1361857985-team",
+          "operationType": "noop",
+          "reason": "Team 'migration-demo-1361857985-team' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-migration-demo-1361857985-team-ghec-content-filler",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:53:07.325Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "migration-demo-1361857985-team:ghec-content-filler",
+          "operationType": "update",
+          "reason": "Binding 'push' permission for team 'migration-demo-1361857985-team' on 'ghec-content-filler'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-platform-infra",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.325Z",
+          "resourceType": "team",
+          "resourceName": "platform-infra",
+          "operationType": "noop",
+          "reason": "Team 'platform-infra' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-fire",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.325Z",
+          "resourceType": "team",
+          "resourceName": "team-fire",
+          "operationType": "noop",
+          "reason": "Team 'Team-Fire' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-fire-react",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:53:07.567Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-fire:react",
+          "operationType": "update",
+          "reason": "Binding 'push' permission for team 'team-fire' on 'react'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-rocket",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.567Z",
+          "resourceType": "team",
+          "resourceName": "team-rocket",
+          "operationType": "noop",
+          "reason": "Team 'Team-Rocket' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-mystic",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.567Z",
+          "resourceType": "team",
+          "resourceName": "team-mystic",
+          "operationType": "noop",
+          "reason": "Team 'Team-Mystic' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-repo",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.567Z",
+          "resourceType": "team",
+          "resourceName": "team-repo",
+          "operationType": "noop",
+          "reason": "Team 'Team-Repo' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-repo-ansible",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:53:07.735Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-repo:ansible",
+          "operationType": "update",
+          "reason": "Binding 'push' permission for team 'team-repo' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-nest",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.735Z",
+          "resourceType": "team",
+          "resourceName": "team-nest",
+          "operationType": "noop",
+          "reason": "Team 'Team-Nest' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-nest-ansible",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:53:07.902Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-nest:ansible",
+          "operationType": "update",
+          "reason": "Binding 'push' permission for team 'team-nest' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-private",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:07.902Z",
+          "resourceType": "team",
+          "resourceName": "team-private",
+          "operationType": "noop",
+          "reason": "Team 'Team-private' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-private-dummy-repo-private-lfs",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:53:08.094Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-private:dummy-repo-private-lfs",
+          "operationType": "update",
+          "reason": "Binding 'pull' permission for team 'team-private' on 'dummy-repo-private-lfs'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-public",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:08.094Z",
+          "resourceType": "team",
+          "resourceName": "team-public",
+          "operationType": "noop",
+          "reason": "Team 'Team-public' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-public-ansible",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:53:08.262Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-public:ansible",
+          "operationType": "update",
+          "reason": "Binding 'admin' permission for team 'team-public' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-public-nestt",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:08.262Z",
+          "resourceType": "team",
+          "resourceName": "team-public-nestt",
+          "operationType": "noop",
+          "reason": "Team 'Team-public-nestt' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-public-nestt-ansible",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:53:08.407Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-public-nestt:ansible",
+          "operationType": "update",
+          "reason": "Binding 'admin' permission for team 'team-public-nestt' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-public-secret",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:08.407Z",
+          "resourceType": "team",
+          "resourceName": "team-public-secret",
+          "operationType": "noop",
+          "reason": "Team 'Team-Public-Secret' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-perm-team-public-secret-ansible",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:53:08.575Z",
+          "resourceType": "team-repo-permission",
+          "resourceName": "team-public-secret:ansible",
+          "operationType": "update",
+          "reason": "Binding 'pull' permission for team 'team-public-secret' on 'ansible'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-role",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:08.575Z",
+          "resourceType": "team",
+          "resourceName": "team-role",
+          "operationType": "noop",
+          "reason": "Team 'Team-Role' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-org-custom-team-role-all_repo_read",
+          "status": "succeeded",
+          "httpStatus": 204,
+          "completedAt": "2026-10-19T23:53:08.966Z",
+          "resourceType": "team-org-role",
+          "resourceName": "team-role:all_repo_read",
+          "operationType": "create",
+          "reason": "Assigning custom organization role 'all_repo_read' to team 'team-role'",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-team-noop-team-tactics",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:08.966Z",
+          "resourceType": "team",
+          "resourceName": "team-tactics",
+          "operationType": "noop",
+          "reason": "Team 'Team-Tactics' already configured with matching settings",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-org-base-permission",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.751Z",
+          "resourceType": "org-permission",
+          "resourceName": "demogxp-mig9",
+          "operationType": "update",
+          "reason": "Aligning default repository permission to 'none'",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 2655,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-rulesets",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "ruleset-noop-migration-demo-1361857985-ruleset",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.751Z",
+          "resourceType": "ruleset",
+          "resourceName": "migration-demo-1361857985-ruleset",
+          "operationType": "noop",
+          "reason": "Ruleset configuration is identical on target.",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-mannequins",
+      "status": "complete",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "packages",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "package:container:migration-demo-1361857985-package:sha256:eae71c3c9ffa3907b5a1929d6d85d1cdc1f0f195dfd221c8bca0420ec90f1c2f",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.752Z",
+          "resourceType": "package-version",
+          "resourceName": "migration-demo-1361857985-package@sha256:eae71c3c9ffa3907b5a1929d6d85d1cdc1f0f195dfd221c8bca0420ec90f1c2f",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "org-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-org-settings-noop-demogxp-mig9",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.753Z",
+          "resourceType": "org-setting",
+          "resourceName": "demogxp-mig9",
+          "operationType": "noop",
+          "reason": "Organization settings for 'demogxp-mig9' already match source configuration",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "actions-policies",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-actions-policies-noop-demogxp-mig9",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.753Z",
+          "resourceType": "actions-policy",
+          "resourceName": "demogxp-mig9:enabled-repositories",
+          "operationType": "noop",
+          "reason": "Organization Actions for 'demogxp-mig9' are already disabled (enabled_repositories: 'none') for sandbox rehearsal mode",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "actions-runners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-noop-runner-group-default",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.753Z",
+          "resourceType": "actions_runner_group",
+          "resourceName": "Default",
+          "operationType": "noop",
+          "reason": "Runner group \"Default\" already matches expected configuration on target",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-runner-group-big-runner",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.753Z",
+          "resourceType": "actions_runner_group",
+          "resourceName": "Big-runner",
+          "operationType": "noop",
+          "reason": "Runner group \"Big-runner\" already matches expected configuration on target",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-runner-group-migration-demo-1361857985-runner-group",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.753Z",
+          "resourceType": "actions_runner_group",
+          "resourceName": "migration-demo-1361857985-runner-group",
+          "operationType": "noop",
+          "reason": "Runner group \"migration-demo-1361857985-runner-group\" already matches expected configuration on target",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-hosted-runner-large-hosted-runner-test",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.753Z",
+          "resourceType": "hosted-runner",
+          "resourceName": "large-hosted-runner-test",
+          "operationType": "noop",
+          "reason": "Larger GitHub-hosted runner \"large-hosted-runner-test\" (size: 2-core) already exists on demogxp-mig9 — verify Actions billing spending limits are set",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "ip-allow-lists",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "apps-inventory",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-advisory-app-hackmd-hub",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "github_app_installation",
+          "resourceName": "hackmd-hub",
+          "operationType": "warn",
+          "reason": "GitHub Apps cannot be installed programmatically via API. An organization administrator must authorize and install \"hackmd-hub\" (ID: 37423) on demogxp-mig9.",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-advisory-app-demogxp-test-custom",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "github_app_installation",
+          "resourceName": "demogxp-test-custom",
+          "operationType": "warn",
+          "reason": "GitHub Apps cannot be installed programmatically via API. \"demogxp-test-custom\" (ID: 5369870) is a private custom app and must be recreated on demogxp-mig9 as \"demogxp-test-custom-demogxp-mig9\" (Selected repositories: react, demo). Recreate URL: https://github.com/organizations/demogxp-mig9/settings/apps/new?name=demogxp-test-custom-demogxp-mig9&description=This+is+just+a+test+app+for+migration+testing&url=https%3A%2F%2Flocalhost.com&public=false&webhook_active=false&actions=write&administration=write&agent_secrets=write&agent_tasks=write&metadata=read",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-advisory-app-testing-all-repos-app",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "github_app_installation",
+          "resourceName": "testing-all-repos-app",
+          "operationType": "warn",
+          "reason": "GitHub Apps cannot be installed programmatically via API. \"testing-all-repos-app\" (ID: 5369888) is a private custom app and must be recreated on demogxp-mig9 as \"testing-all-repos-app-demogxp-mig9\". Recreate URL: https://github.com/organizations/demogxp-mig9/settings/apps/new?name=testing-all-repos-app-demogxp-mig9&description=Recreated+from+source+GitHub+App+%22testing-all-repos-app%22+for+demogxp-mig9&url=https%3A%2F%2Flocalhost.com&public=false&webhook_active=false&actions=write&administration=write&metadata=read",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "projects-v2",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "op-noop-project-v2-migration-demo-1361857985-project",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2",
+          "resourceName": "migration-demo-1361857985-project",
+          "operationType": "noop",
+          "reason": "Project v2 \"migration-demo-1361857985-project\" already exists in target organization",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-title",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Title",
+          "operationType": "noop",
+          "reason": "Field \"Title\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-assignees",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Assignees",
+          "operationType": "noop",
+          "reason": "Field \"Assignees\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-status",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Status",
+          "operationType": "noop",
+          "reason": "Field \"Status\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-labels",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Labels",
+          "operationType": "noop",
+          "reason": "Field \"Labels\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-linked-pull-requests",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Linked pull requests",
+          "operationType": "noop",
+          "reason": "Field \"Linked pull requests\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-milestone",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Milestone",
+          "operationType": "noop",
+          "reason": "Field \"Milestone\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-repository",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Repository",
+          "operationType": "noop",
+          "reason": "Field \"Repository\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-reviewers",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Reviewers",
+          "operationType": "noop",
+          "reason": "Field \"Reviewers\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-parent-issue",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Parent issue",
+          "operationType": "noop",
+          "reason": "Field \"Parent issue\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-sub-issues-progress",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Sub-issues progress",
+          "operationType": "noop",
+          "reason": "Field \"Sub-issues progress\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-created",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Created",
+          "operationType": "noop",
+          "reason": "Field \"Created\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-updated",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Updated",
+          "operationType": "noop",
+          "reason": "Field \"Updated\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-migration-demo-1361857985-project-closed",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "migration-demo-1361857985-project:Closed",
+          "operationType": "noop",
+          "reason": "Field \"Closed\" already exists on project \"migration-demo-1361857985-project\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-projectgxp",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2",
+          "resourceName": "PROJECTGXP",
+          "operationType": "noop",
+          "reason": "Project v2 \"PROJECTGXP\" already exists in target organization",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-title",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Title",
+          "operationType": "noop",
+          "reason": "Field \"Title\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-assignees",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Assignees",
+          "operationType": "noop",
+          "reason": "Field \"Assignees\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-status",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Status",
+          "operationType": "noop",
+          "reason": "Field \"Status\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-labels",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Labels",
+          "operationType": "noop",
+          "reason": "Field \"Labels\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-linked-pull-requests",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Linked pull requests",
+          "operationType": "noop",
+          "reason": "Field \"Linked pull requests\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-milestone",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Milestone",
+          "operationType": "noop",
+          "reason": "Field \"Milestone\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-repository",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Repository",
+          "operationType": "noop",
+          "reason": "Field \"Repository\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-reviewers",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Reviewers",
+          "operationType": "noop",
+          "reason": "Field \"Reviewers\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-parent-issue",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Parent issue",
+          "operationType": "noop",
+          "reason": "Field \"Parent issue\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-sub-issues-progress",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Sub-issues progress",
+          "operationType": "noop",
+          "reason": "Field \"Sub-issues progress\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-created",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Created",
+          "operationType": "noop",
+          "reason": "Field \"Created\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-updated",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Updated",
+          "operationType": "noop",
+          "reason": "Field \"Updated\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        },
+        {
+          "operationId": "op-noop-project-v2-field-projectgxp-closed",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T23:53:09.754Z",
+          "resourceType": "project_v2_field",
+          "resourceName": "PROJECTGXP:Closed",
+          "operationType": "noop",
+          "reason": "Field \"Closed\" already exists on project \"PROJECTGXP\"",
+          "targetIdentifier": "demogxp-mig9"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9",
+      "scopeLevel": "organization"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [],
+      "durationMs": 1233,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:runner",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:10.988Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/runner",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/runner"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:runner",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:14.393Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "runner",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/runner"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:runner:CODEOWNERS",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:28.791Z",
+          "resourceType": "codeowners-file",
+          "resourceName": "CODEOWNERS",
+          "operationType": "noop",
+          "reason": "Team ownership references in CODEOWNERS already match target organization",
+          "targetIdentifier": "demogxp-mig9/runner"
+        },
+        {
+          "operationId": "codeowners:runner:.github/workflows/npm-audit-typescript.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:28.791Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/npm-audit-typescript.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/npm-audit-typescript.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/runner"
+        },
+        {
+          "operationId": "codeowners:runner:.github/workflows/npm-audit.yml",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:28.791Z",
+          "resourceType": "workflow-team-ref",
+          "resourceName": ".github/workflows/npm-audit.yml",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/workflows/npm-audit.yml already match target organization",
+          "targetIdentifier": "demogxp-mig9/runner"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:runner",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T23:53:30.564Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "runner",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/runner"
+        }
+      ],
+      "durationMs": 2802,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 1,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/runner",
+      "scopeLevel": "repository"
+    }
+  ]
+}

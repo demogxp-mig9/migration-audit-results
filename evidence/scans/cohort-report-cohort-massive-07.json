@@ -1,0 +1,448 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450255923-d1d6071e",
+  "executedAt": "2026-10-19T22:52:15.447Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-mirror-push-TypeScript",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:24.736Z",
+          "resourceType": "repository",
+          "resourceName": "TypeScript",
+          "operationType": "create",
+          "reason": "Transferred repository \"TypeScript\" via direct Git mirror-push (15211ms); metadata queued for sidecar rehydration. GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        }
+      ],
+      "durationMs": 16388,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": [
+        "issues",
+        "pull-requests",
+        "releases"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:TypeScript",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:26.421Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/TypeScript",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", has_issues: true -> false, description: \"\" -> \"TypeScript is a superset of JavaScript that compiles to clean JavaScript output.\", homepage: \"\" -> \"https://www.typescriptlang.org\", archived: false -> true",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        }
+      ],
+      "durationMs": 658,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:TypeScript",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:30.103Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "TypeScript",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:TypeScript",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:51:34.477Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "TypeScript",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        }
+      ],
+      "durationMs": 2788,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "releases",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "issues",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "label:TypeScript:accessibility",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.337Z",
+          "resourceType": "issue-label",
+          "resourceName": "accessibility",
+          "operationType": "noop",
+          "reason": "Label \"accessibility\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:bug",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.337Z",
+          "resourceType": "issue-label",
+          "resourceName": "bug",
+          "operationType": "noop",
+          "reason": "Label \"bug\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:dependencies",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:51:40.609Z",
+          "resourceType": "issue-label",
+          "resourceName": "dependencies",
+          "operationType": "create",
+          "reason": "Create label \"dependencies\".",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:documentation",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.609Z",
+          "resourceType": "issue-label",
+          "resourceName": "documentation",
+          "operationType": "noop",
+          "reason": "Label \"documentation\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:duplicate",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.609Z",
+          "resourceType": "issue-label",
+          "resourceName": "duplicate",
+          "operationType": "noop",
+          "reason": "Label \"duplicate\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:enhancement",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.609Z",
+          "resourceType": "issue-label",
+          "resourceName": "enhancement",
+          "operationType": "noop",
+          "reason": "Label \"enhancement\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:good first issue",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.609Z",
+          "resourceType": "issue-label",
+          "resourceName": "good first issue",
+          "operationType": "noop",
+          "reason": "Label \"good first issue\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:help wanted",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.609Z",
+          "resourceType": "issue-label",
+          "resourceName": "help wanted",
+          "operationType": "noop",
+          "reason": "Label \"help wanted\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:invalid",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.609Z",
+          "resourceType": "issue-label",
+          "resourceName": "invalid",
+          "operationType": "noop",
+          "reason": "Label \"invalid\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:javascript",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:51:40.989Z",
+          "resourceType": "issue-label",
+          "resourceName": "javascript",
+          "operationType": "create",
+          "reason": "Create label \"javascript\".",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:question",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.989Z",
+          "resourceType": "issue-label",
+          "resourceName": "question",
+          "operationType": "noop",
+          "reason": "Label \"question\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "label:TypeScript:wontfix",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:51:40.989Z",
+          "resourceType": "issue-label",
+          "resourceName": "wontfix",
+          "operationType": "noop",
+          "reason": "Label \"wontfix\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        }
+      ],
+      "durationMs": 854,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "pull-requests",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "pull-request:TypeScript:7",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:51:46.700Z",
+          "resourceType": "pull-request",
+          "resourceName": "#7 Bump brace-expansion from 5.0.9 to 5.0.12",
+          "operationType": "create",
+          "reason": "Recreate open pull request #7 \"Bump brace-expansion from 5.0.9 to 5.0.12\".",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "pull-request:TypeScript:6",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:51:51.375Z",
+          "resourceType": "pull-request",
+          "resourceName": "#6 Bump markdown-it from 14.3.0 to 14.3.2",
+          "operationType": "create",
+          "reason": "Recreate open pull request #6 \"Bump markdown-it from 14.3.0 to 14.3.2\".",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "pull-request:TypeScript:5",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:51:56.410Z",
+          "resourceType": "pull-request",
+          "resourceName": "#5 Bump undici from 7.29.0 to 7.30.0",
+          "operationType": "create",
+          "reason": "Recreate open pull request #5 \"Bump undici from 7.29.0 to 7.30.0\".",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "pull-request:TypeScript:4",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:01.762Z",
+          "resourceType": "pull-request",
+          "resourceName": "#4 Bump adm-zip from 0.5.18 to 0.6.1",
+          "operationType": "create",
+          "reason": "Recreate open pull request #4 \"Bump adm-zip from 0.5.18 to 0.6.1\".",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "pull-request:TypeScript:3",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:06.403Z",
+          "resourceType": "pull-request",
+          "resourceName": "#3 Bump js-yaml from 4.3.1 to 4.3.2",
+          "operationType": "create",
+          "reason": "Recreate open pull request #3 \"Bump js-yaml from 4.3.1 to 4.3.2\".",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "pull-request:TypeScript:2",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:10.956Z",
+          "resourceType": "pull-request",
+          "resourceName": "#2 Bump fast-uri from 3.1.5 to 3.1.7",
+          "operationType": "create",
+          "reason": "Recreate open pull request #2 \"Bump fast-uri from 3.1.5 to 3.1.7\".",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        },
+        {
+          "operationId": "pull-requests-archive:TypeScript",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:52:12.796Z",
+          "resourceType": "pull-requests-archive",
+          "resourceName": "Historical Pull Requests Archive",
+          "operationType": "create",
+          "reason": "Archive 1 closed/merged pull requests into historical audit issue.",
+          "targetIdentifier": "demogxp-mig9/TypeScript"
+        }
+      ],
+      "durationMs": 31019,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/TypeScript",
+      "scopeLevel": "repository"
+    }
+  ],
+  "recommendations": [
+    "GEI omitted issues metadata for demogxp-mig9/TypeScript. Recommended fallback module: 'issues'.",
+    "GEI omitted pull-requests metadata for demogxp-mig9/TypeScript. Recommended fallback module: 'pull-requests'.",
+    "GEI omitted releases metadata for demogxp-mig9/TypeScript. Recommended fallback module: 'releases'."
+  ]
+}

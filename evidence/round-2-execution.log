@@ -1,0 +1,20 @@
+Executing remediation for demogxp-mig9/runner (archived)...
+Migration finished with status: complete
+Execution report saved: ./scans/migration-execution.json
+Modules executed: 1
+Executing remediation for runner...
+[WARN] Plan warning for module "org-webhooks" on "demogxp-mig9": Webhook `https://migration-demo.invalid/migration-demo-1361857985/org` is forced inactive (active: false) because sandbox rehearsal mode is enabled.
+[WARN] Plan warning for module "org-webhooks" on "demogxp-mig9": Webhook `https://httpbin.org/post` is forced inactive (active: false) because sandbox rehearsal mode is enabled.
+[WARN] Plan warning for module "post-migration-mannequins" on "demogxp-mig9": Skipped mannequin reclamation because 0 unclaimed mannequins were found in "demogxp-mig9". Why this happens: Either all Issue and Pull Request authors already matched existing users in "demogxp-mig9", repositories had no external Issue/PR history creating mannequins, or mannequins were already reclaimed. Next steps: Verify attribution status at [Attribution Invitations ↗](https://github.com/organizations/demogxp-mig9/settings/import_export) or run `gh gei generate-mannequin-csv --github-target-org demogxp-mig9`.
+[WARN] Plan warning for module "post-migration-mannequins" on "demogxp-mig9": Mannequins only apply to Issues and Pull Requests. Git commits are linked to GitHub user profiles by matching the commit email address—developers can link historical commits by adding their legacy email addresses under [GitHub Email Settings ↗](https://github.com/settings/emails).
+[WARN] Plan warning for module "packages" on "demogxp-mig9": Package "migration-demo-1361857985-package" is linked to repository "ghec-content-filler"; ensure repository is migrated to retain linkage.
+[WARN] Plan warning for module "actions-policies" on "demogxp-mig9": Organization Actions enabled_repositories for 'demogxp-mig9' is forced to 'none' because sandbox rehearsal mode is enabled (source was 'all').
+[WARN] Plan warning for module "actions-runners" on "demogxp-mig9": Larger GitHub-hosted runners detected (1). Ensure GitHub Actions spending limits are configured above $0 on demogxp-mig9 so provisioned larger runners can execute jobs.
+[WARN] Plan warning for module "apps-inventory" on "demogxp-mig9": Manual reinstallation advisory: GitHub App "hackmd-hub" must be installed on demogxp-mig9 manually.
+[WARN] Plan warning for module "apps-inventory" on "demogxp-mig9": Manual reinstallation advisory: GitHub App "demogxp-test-custom" must be installed on demogxp-mig9 manually.
+[WARN] Plan warning for module "apps-inventory" on "demogxp-mig9": Manual reinstallation advisory: GitHub App "testing-all-repos-app" must be installed on demogxp-mig9 manually.
+[WARN] Plan warning for module "gei-repo" on "demogxp-mig9/runner": Sandbox rehearsal mode is enabled: GitHub Actions will be disabled on target repository 'demogxp-mig9/runner' after import.
+Migration finished with status: complete
+Execution report saved: ./scans/migration-execution.json
+Modules executed: 31
+Remediation round 2 script exited with code 0

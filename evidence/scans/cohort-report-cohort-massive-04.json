@@ -1,0 +1,393 @@
+{
+  "schemaVersion": "1.0.0",
+  "planId": "migrate-1792450257246-8d41e019",
+  "executedAt": "2026-10-19T22:53:21.515Z",
+  "status": "complete",
+  "exitCode": 0,
+  "dryRun": false,
+  "sandboxRehearsal": true,
+  "results": [
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "gei-repo",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "gei-repo-mirror-push-llvm-project",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:52:46.050Z",
+          "resourceType": "repository",
+          "resourceName": "llvm-project",
+          "operationType": "create",
+          "reason": "Transferred repository \"llvm-project\" via direct Git mirror-push (84325ms); metadata queued for sidecar rehydration. GitHub Actions disabled on target repository (enabled: false) for sandbox rehearsal mode.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        }
+      ],
+      "durationMs": 85778,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository",
+      "metadataState": "partial",
+      "failedMetadataCategories": [
+        "issues",
+        "pull-requests",
+        "releases"
+      ]
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-settings",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-settings:llvm-project",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:52:47.958Z",
+          "resourceType": "repository-settings",
+          "resourceName": "demogxp-mig9/llvm-project",
+          "operationType": "update",
+          "reason": "Reconcile repository settings: visibility: \"private\" -> \"public\", has_issues: true -> false, has_wiki: true -> false, description: \"\" -> \"The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.\", homepage: \"\" -> \"http://llvm.org\", archived: false -> true",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        }
+      ],
+      "durationMs": 624,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-variables",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-secrets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "environments",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "webhooks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "repo-custom-properties",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "repo-custom-properties:llvm-project",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:52:51.903Z",
+          "resourceType": "custom-property-values",
+          "resourceName": "llvm-project",
+          "operationType": "noop",
+          "reason": "Custom property value(s) (open_source) already match target configuration",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "rulesets",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "branch-protection",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "post-migration-codeowners",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "codeowners:llvm-project:.github/CODEOWNERS",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:53:04.624Z",
+          "resourceType": "codeowners-file",
+          "resourceName": ".github/CODEOWNERS",
+          "operationType": "noop",
+          "reason": "Team ownership references in .github/CODEOWNERS already match target organization",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        }
+      ],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "security",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "security-settings:llvm-project",
+          "status": "succeeded",
+          "completedAt": "2026-10-19T22:53:05.576Z",
+          "resourceType": "repository-security-settings",
+          "resourceName": "llvm-project",
+          "operationType": "noop",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        }
+      ],
+      "durationMs": 2790,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "releases",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "deploy-keys",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "collaborators",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "lfs",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "issues",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "label:llvm-project:accessibility",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.044Z",
+          "resourceType": "issue-label",
+          "resourceName": "accessibility",
+          "operationType": "noop",
+          "reason": "Label \"accessibility\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:bug",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.044Z",
+          "resourceType": "issue-label",
+          "resourceName": "bug",
+          "operationType": "noop",
+          "reason": "Label \"bug\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:dependencies",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:12.367Z",
+          "resourceType": "issue-label",
+          "resourceName": "dependencies",
+          "operationType": "create",
+          "reason": "Create label \"dependencies\".",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:documentation",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.367Z",
+          "resourceType": "issue-label",
+          "resourceName": "documentation",
+          "operationType": "noop",
+          "reason": "Label \"documentation\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:duplicate",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.367Z",
+          "resourceType": "issue-label",
+          "resourceName": "duplicate",
+          "operationType": "noop",
+          "reason": "Label \"duplicate\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:enhancement",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.367Z",
+          "resourceType": "issue-label",
+          "resourceName": "enhancement",
+          "operationType": "noop",
+          "reason": "Label \"enhancement\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:good first issue",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.367Z",
+          "resourceType": "issue-label",
+          "resourceName": "good first issue",
+          "operationType": "noop",
+          "reason": "Label \"good first issue\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:help wanted",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.367Z",
+          "resourceType": "issue-label",
+          "resourceName": "help wanted",
+          "operationType": "noop",
+          "reason": "Label \"help wanted\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:invalid",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.367Z",
+          "resourceType": "issue-label",
+          "resourceName": "invalid",
+          "operationType": "noop",
+          "reason": "Label \"invalid\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:javascript",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:12.728Z",
+          "resourceType": "issue-label",
+          "resourceName": "javascript",
+          "operationType": "create",
+          "reason": "Create label \"javascript\".",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:question",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.728Z",
+          "resourceType": "issue-label",
+          "resourceName": "question",
+          "operationType": "noop",
+          "reason": "Label \"question\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        },
+        {
+          "operationId": "label:llvm-project:wontfix",
+          "status": "succeeded",
+          "httpStatus": 200,
+          "completedAt": "2026-10-19T22:53:12.728Z",
+          "resourceType": "issue-label",
+          "resourceName": "wontfix",
+          "operationType": "noop",
+          "reason": "Label \"wontfix\" already exists on target.",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        }
+      ],
+      "durationMs": 1038,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "pull-requests",
+      "status": "complete",
+      "results": [
+        {
+          "operationId": "pull-request:llvm-project:1",
+          "status": "succeeded",
+          "httpStatus": 201,
+          "completedAt": "2026-10-19T22:53:18.875Z",
+          "resourceType": "pull-request",
+          "resourceName": "#1 Bump brace-expansion in /mlir/utils/vscode",
+          "operationType": "create",
+          "reason": "Recreate open pull request #1 \"Bump brace-expansion in /mlir/utils/vscode\".",
+          "targetIdentifier": "demogxp-mig9/llvm-project"
+        }
+      ],
+      "durationMs": 5264,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "autolinks",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "moduleId": "discussions",
+      "status": "skipped",
+      "results": [],
+      "durationMs": 0,
+      "targetIdentifier": "demogxp-mig9/llvm-project",
+      "scopeLevel": "repository"
+    }
+  ],
+  "recommendations": [
+    "GEI omitted issues metadata for demogxp-mig9/llvm-project. Recommended fallback module: 'issues'.",
+    "GEI omitted pull-requests metadata for demogxp-mig9/llvm-project. Recommended fallback module: 'pull-requests'.",
+    "GEI omitted releases metadata for demogxp-mig9/llvm-project. Recommended fallback module: 'releases'."
+  ]
+}

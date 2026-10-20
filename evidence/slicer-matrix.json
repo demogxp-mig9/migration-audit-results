@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-10-19T22:50:23.250Z",
+  "cohortCount": 14,
+  "matrix": {
+    "include": [
+      {
+        "cohortId": "cohort-standard-01",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "nest",
+          "prometheus",
+          "core",
+          "react",
+          "runner"
+        ],
+        "tier": "standard",
+        "useGei": true,
+        "skipReleases": false,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": false,
+        "requiresHeadroomCheck": false,
+        "estimatedScratchBytes": 1342745088
+      },
+      {
+        "cohortId": "cohort-standard-02",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "dummy-repo-public",
+          "flask",
+          "svelte",
+          "rust",
+          "ansible"
+        ],
+        "tier": "standard",
+        "useGei": true,
+        "skipReleases": false,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": false,
+        "requiresHeadroomCheck": false,
+        "estimatedScratchBytes": 2009278464
+      },
+      {
+        "cohortId": "cohort-standard-03",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "dummy-repo-private-lfs",
+          "express",
+          "node",
+          "terraform",
+          "ghe-actions-migration-framework"
+        ],
+        "tier": "git-lfs",
+        "useGei": true,
+        "skipReleases": false,
+        "useReleaseFallback": false,
+        "useLfsStreamer": true,
+        "useMirrorPush": false,
+        "requiresHeadroomCheck": false,
+        "estimatedScratchBytes": 2528847360
+      },
+      {
+        "cohortId": "cohort-standard-04",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "kubernetes",
+          "ghec-content-filler",
+          "migration-demo-1361857985-companion",
+          "migration-demo-1361857985-fork",
+          "grafana"
+        ],
+        "tier": "standard",
+        "useGei": true,
+        "skipReleases": false,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": false,
+        "requiresHeadroomCheck": false,
+        "estimatedScratchBytes": 5172347904
+      },
+      {
+        "cohortId": "cohort-standard-05",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "demo",
+          "juice-shop",
+          "cpython",
+          "go",
+          "django"
+        ],
+        "tier": "git-lfs",
+        "useGei": true,
+        "skipReleases": false,
+        "useReleaseFallback": false,
+        "useLfsStreamer": true,
+        "useMirrorPush": false,
+        "requiresHeadroomCheck": false,
+        "estimatedScratchBytes": 2378824704
+      },
+      {
+        "cohortId": "cohort-standard-06",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "fastify",
+          "vite"
+        ],
+        "tier": "standard",
+        "useGei": true,
+        "skipReleases": false,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": false,
+        "requiresHeadroomCheck": false,
+        "estimatedScratchBytes": 130361856
+      },
+      {
+        "cohortId": "cohort-standard-07",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "release-heavy-benchmark"
+        ],
+        "tier": "large-releases",
+        "useGei": true,
+        "skipReleases": true,
+        "useReleaseFallback": true,
+        "useLfsStreamer": false,
+        "useMirrorPush": false,
+        "requiresHeadroomCheck": false,
+        "estimatedScratchBytes": 33792
+      },
+      {
+        "cohortId": "cohort-massive-01",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "WebKit"
+        ],
+        "tier": "massive-mirror",
+        "useGei": false,
+        "skipReleases": true,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": true,
+        "requiresHeadroomCheck": true,
+        "estimatedScratchBytes": 20210254848
+      },
+      {
+        "cohortId": "cohort-massive-02",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "next.js"
+        ],
+        "tier": "massive-mirror",
+        "useGei": false,
+        "skipReleases": true,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": true,
+        "requiresHeadroomCheck": true,
+        "estimatedScratchBytes": 3644878848
+      },
+      {
+        "cohortId": "cohort-massive-03",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "chromium"
+        ],
+        "tier": "massive-mirror",
+        "useGei": false,
+        "skipReleases": true,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": true,
+        "requiresHeadroomCheck": true,
+        "estimatedScratchBytes": 87464478720
+      },
+      {
+        "cohortId": "cohort-massive-04",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "llvm-project"
+        ],
+        "tier": "massive-mirror",
+        "useGei": false,
+        "skipReleases": true,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": true,
+        "requiresHeadroomCheck": true,
+        "estimatedScratchBytes": 6203923968
+      },
+      {
+        "cohortId": "cohort-massive-05",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "nixpkgs"
+        ],
+        "tier": "massive-mirror",
+        "useGei": false,
+        "skipReleases": true,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": true,
+        "requiresHeadroomCheck": true,
+        "estimatedScratchBytes": 5337822720
+      },
+      {
+        "cohortId": "cohort-massive-06",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "linux"
+        ],
+        "tier": "massive-mirror",
+        "useGei": false,
+        "skipReleases": true,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": true,
+        "requiresHeadroomCheck": true,
+        "estimatedScratchBytes": 9832323072
+      },
+      {
+        "cohortId": "cohort-massive-07",
+        "runnerLabels": [
+          "ubuntu-latest"
+        ],
+        "repositories": [
+          "TypeScript"
+        ],
+        "tier": "massive-mirror",
+        "useGei": false,
+        "skipReleases": true,
+        "useReleaseFallback": false,
+        "useLfsStreamer": false,
+        "useMirrorPush": true,
+        "requiresHeadroomCheck": true,
+        "estimatedScratchBytes": 3482492928
+      }
+    ]
+  }
+}
